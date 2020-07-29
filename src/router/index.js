@@ -1,6 +1,10 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
 import Home from "@/views/Home.vue";
+const Projects = () => import(/* webpackChunkName: "projects" */ "@/views/Projects.vue");
+const Gallery = () => import(/* webpackChunkName: "gallery" */ "@/views/Gallery.vue");
+const About = () => import(/* webpackChunkName: "about" */ "@/views/About.vue");
+const Contact = () => import(/* webpackChunkName: "contact" */ "@/views/Contact.vue");
 
 Vue.use(VueRouter);
 
@@ -13,30 +17,22 @@ const routes = [
     {
         path: "/projects",
         name: "Projects",
-        component: () => {
-            import(/* webpackChunkName: "projects" */ "@/views/Projects.vue");
-        }
+        component: Projects
     },
     {
         path: "/gallery",
         name: "Gallery",
-        component: () => {
-            import(/* webpackChunkName: "gallery" */ "@/views/Gallery.vue");
-        }
+        component: Gallery
     },
     {
         path: "/about",
         name: "About",
-        component: () => {
-            import(/* webpackChunkName: "about" */ "@/views/About.vue");
-        }
+        component: About
     },
     {
         path: "/contact",
         name: "Contact",
-        component: () => {
-            import(/* webpackChunkName: "contact" */ "@/views/Contact.vue");
-        }
+        component: Contact
     }
 ];
 
