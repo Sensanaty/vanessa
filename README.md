@@ -1,24 +1,5 @@
-# vanessa
+# Vanessa Sölter
 
-## Project setup
-```
-yarn install
-```
+This is the personal portfolio of Industrial Designer Vanessa Sölter. You can view the live site at [vanessasoelter.com](https://www.vanessasoelter.com/).
 
-### Compiles and hot-reloads for development
-```
-yarn serve
-```
-
-### Compiles and minifies for production
-```
-yarn build
-```
-
-### Lints and fixes files
-```
-yarn lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+Built with Vue, bootstrapped using vue-cli. Hosted on Netlify.
