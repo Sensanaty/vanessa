@@ -17,3 +17,8 @@ html, body, #app {
 body {
     background: $color-main;
 }
+
+h1, h2, h3, p {
+    padding: 0;
+    margin: 0;
+}
