@@ -1,5 +1,6 @@
 <template>
     <div id="app">
+        <Header v-if="renderNav" />
         <router-view />
         <Footer />
     </div>
@@ -14,11 +15,18 @@
 
 <script>
     import Footer from "@/components/Footer";
+    import Header from "@/components/Header";
 
     export default {
         name: "App",
         components: {
-            Footer
+            Footer,
+            Header
+        },
+        computed: {
+            renderNav() {
+                return !(this.$route.name === "Home" || !this.$route.name);
+            }
         }
     };
 </script>
