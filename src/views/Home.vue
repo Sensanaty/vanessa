@@ -2,4 +2,8 @@
     <h1>Home</h1>
 </template>
 
-<script></script>
+<script>
+    export default {
+        name: "Home"
+    };
+</script>
