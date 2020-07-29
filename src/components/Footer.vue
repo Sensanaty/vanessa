@@ -38,9 +38,9 @@
         flex-flow: row nowrap;
         justify-content: space-between;
         align-items: center;
-        background: #272727;
+        background: $color-secondary;
         flex: 1 0 auto;
-        color: #fdfdfd;
+        color: $off-white;
         font-weight: bold;
 
         nav {
@@ -68,13 +68,13 @@
             a {
                 display: inline-block;
                 user-select: all;
-                color: #fdfdfd;
+                color: $off-white;
                 text-decoration: none;
                 transition: all 150ms ease-in-out;
 
                 &:hover {
                     transform: skew(-10deg) translate(1px);
-                    color: #ffca3a;
+                    color: $highlight-main;
                 }
             }
         }
@@ -84,7 +84,7 @@
         height: 60%;
         margin: 0 10px;
         border-radius: 50%;
-        box-shadow: 0 0 0 0 #2f2f2f;
+        box-shadow: 0 0 0 0 $color-main;
         transition: all 100ms ease-in-out;
 
         &:nth-child(1) {
@@ -92,16 +92,16 @@
         }
 
         svg {
-            fill: #fdfdfd;
+            fill: $off-white;
             height: 100%;
             width: auto;
             transition: all 175ms ease-in-out;
         }
 
         &:hover {
-            box-shadow: 0 0 4px 0 transparentize(#ffca3a, 0.5);
+            box-shadow: 0 0 4px 0 transparentize($highlight-main, 0.5);
             svg {
-                fill: #ffca3a;
+                fill: $highlight-main;
             }
         }
     }
