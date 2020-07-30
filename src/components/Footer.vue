@@ -6,7 +6,7 @@
             <a href="https://google.com" class="social-link"><LinkedinIcon /></a>
             <a href="https://google.com" class="social-link"><FacebookIcon /></a>
         </nav>
-        <div class="copyright">Copyright © 2020 Vanessa Sölter</div>
+        <div class="copyright">Copyright © 2020 <span>Vanessa Sölter</span></div>
         <div class="plug">Made with <span>&lt;3</span> by <a href="https://github.com/Sensanaty">Sensanaty</a></div>
     </footer>
 </template>
@@ -54,6 +54,10 @@
         .copyright {
             font-size: 2rem;
             user-select: none;
+
+            span {
+                user-select: all;
+            }
         }
 
         .plug {
