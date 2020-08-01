@@ -51,6 +51,8 @@
         display: flex;
         flex-flow: row nowrap;
         height: 100px;
+        min-height: 100px;
+        max-height: 100px;
         align-items: center;
         text-align: center;
         transition: background 350ms ease-in-out;

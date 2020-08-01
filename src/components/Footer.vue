@@ -32,16 +32,20 @@
     footer {
         margin-top: auto;
         height: 80px;
+        min-height: 80px;
         max-height: 80px;
         width: 100%;
         display: flex;
+        position: sticky;
+        top: 0;
+        left: 0;
         flex-flow: row nowrap;
         justify-content: space-between;
         align-items: center;
         background: $color-secondary;
-        flex: 1 0 auto;
         color: $off-white;
         font-weight: bold;
+        flex: 0;
 
         nav {
             height: 100%;
