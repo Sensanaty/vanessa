@@ -21,7 +21,6 @@
 
 <style lang="scss">
     .home-wrapper {
-        height: 100%;
         align-items: center;
         display: flex;
         flex-flow: column nowrap;
