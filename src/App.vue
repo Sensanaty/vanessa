@@ -1,17 +1,12 @@
 <template>
     <div id="app">
-        <Header v-if="renderNav" />
+        <transition name="header">
+            <Header v-show="renderNav" />
+        </transition>
         <router-view />
         <Footer />
     </div>
 </template>
-
-<style lang="scss">
-    #app {
-        display: flex;
-        flex-flow: column nowrap;
-    }
-</style>
 
 <script>
     import Footer from "@/components/Footer";
@@ -25,8 +20,28 @@
         },
         computed: {
             renderNav() {
-                return !(this.$route.name === "Home" || !this.$route.name);
+                return !(this.$route.name === "Home");
             }
         }
     };
 </script>
+
+<style lang="scss">
+    #app {
+        display: flex;
+        flex-flow: column nowrap;
+    }
+
+    .content-wrapper {
+        padding: 15px;
+    }
+
+    .header-leave-active {
+        transition: all 1ms;
+    }
+
+    .header-leave,
+    .header-leave-to {
+        display: none;
+    }
+</style>

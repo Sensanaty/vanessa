@@ -5,10 +5,10 @@
             <h1 class="subtitle">NOT TRASH</h1>
         </div>
         <nav class="hero-navigation">
-            <router-link to="/projects" class="navlink projects">PROJECTS</router-link>
-            <router-link to="/gallery" class="navlink gallery">GALLERY</router-link>
-            <router-link to="/about" class="navlink about">ABOUT</router-link>
-            <router-link to="/contact" class="navlink contact">CONTACT</router-link>
+            <router-link to="/projects" class="navlink projects" exact>PROJECTS</router-link>
+            <router-link to="/gallery" class="navlink gallery" exact>GALLERY</router-link>
+            <router-link to="/about" class="navlink about" exact>ABOUT</router-link>
+            <router-link to="/contact" class="navlink contact" exact>CONTACT</router-link>
         </nav>
     </div>
 </template>
