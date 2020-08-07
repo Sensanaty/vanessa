@@ -1,28 +1,20 @@
 <template>
     <div class="content-wrapper projects-wrapper">
         <ProjectCard
-            title="Cool Tablet"
-            description="word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word"
-            altText="tablet"
-            :image="images.tablet"
-        />
-        <ProjectCard
-            title="Cool Table"
-            description="This is the really cool tablet and it has a pretty long description wow that's long"
-            altText="tablet"
-            :image="images.table"
-        />
-        <ProjectCard
-            title="Cool Scissors"
-            description="This is the really cool tablet and it has a pretty long description wow that's long"
-            altText="tablet"
-            :image="images.scissors"
+            v-for="project in ProjectList"
+            :key="project.id"
+            :title="project.title"
+            :description="project.description"
+            :altText="project.altText"
+            :imagePaths="project.image"
+            :url="project.src"
         />
     </div>
 </template>
 
 <script>
     import ProjectCard from "@/components/ProjectCard";
+    import ProjectList from "@/assets/lists/projectList.json";
 
     export default {
         name: "Projects",
@@ -31,11 +23,7 @@
         },
         data() {
             return {
-                images: {
-                    tablet: require("@/assets/images/projects/tablet.webp"),
-                    table: require("@/assets/images/projects/table.webp"),
-                    scissors: require("@/assets/images/projects/scissors.webp")
-                }
+                ProjectList
             };
         }
     };

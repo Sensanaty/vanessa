@@ -1,7 +1,11 @@
 <template>
-    <router-link class="project-link" :to="'projects/' + altText" exact>
+    <router-link class="project-link" :to="'projects/' + url" exact>
         <div class="project-card">
-            <img v-lazy="image" :alt="altText" />
+            <picture>
+                <source :srcset="imagePaths.webp" type="image/webp" />
+                <source :srcset="imagePaths.jpg" type="image/jpeg" />
+                <img :src="imagePaths.jpg" :alt="altText" class="project-image" >
+            </picture>
             <div class="text-wrapper">
                 <h1 class="project-title">{{ title.toUpperCase() }}</h1>
                 <p class="project-description">{{ description }}</p>
@@ -14,10 +18,11 @@
     export default {
         name: "ProjectCard",
         props: {
-            image: String,
+            imagePaths: Object,
             altText: String,
             title: String,
-            description: String
+            description: String,
+            url: String
         }
     };
 </script>
@@ -30,6 +35,7 @@
         margin: 15px;
         box-shadow: 0 4px 4px 4px transparentize(black, 0.7), 0 4px 6px 6px transparentize(black, 0.8),
             0 4px 8px 8px transparentize(black, 0.9);
+        background-image: url("/images/ohmlaut.svg");
 
         .project-title,
         .project-description {
@@ -64,7 +70,7 @@
 
         &:hover {
             box-shadow: 0 4px 4px 4px transparentize(black, 0.8), 0 4px 6px 6px transparentize(black, 0.8),
-            0 4px 8px 8px transparentize(black, 0.8);
+                0 4px 8px 8px transparentize(black, 0.8);
 
             .text-wrapper {
                 opacity: 1;
