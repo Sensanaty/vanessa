@@ -15,12 +15,13 @@ $font-bold: "Aeonik Bold", sans-serif;
     background: $color-main;
 }
 
-html, body, #app {
-    height: 100%;
+body {
+    height: 100vh;
+    background: $color-main;
 }
 
-body {
-    background: $color-main;
+#app {
+    height: 100%;
 }
 
 h1, h2, h3, p {

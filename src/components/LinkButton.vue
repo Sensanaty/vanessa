@@ -14,6 +14,7 @@
 
 <style lang="scss">
     .link-button {
+        user-select: none;
         padding: 20px;
         color: $off-white;
         background: $color-main;
