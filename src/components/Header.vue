@@ -19,17 +19,19 @@
         methods: {
             changeHeader(name) {
                 const wrapper = document.querySelector(".header-wrapper");
+                const pagePath = this.$route.path;
+                console.log("Route:", name);
 
-                if (name === "Projects") {
+                if (name === "Projects" || pagePath.includes("projects/")) {
                     wrapper.classList.remove("gallery", "about", "contact");
                     wrapper.classList.add("projects");
-                } else if (name === "Gallery") {
+                } else if (name === "Gallery" || pagePath.includes("gallery/")) {
                     wrapper.classList.remove("project", "about", "contact");
                     wrapper.classList.add("gallery");
-                } else if (name === "About") {
+                } else if (name === "About" || pagePath.includes("about/")) {
                     wrapper.classList.remove("gallery", "projects", "contact");
                     wrapper.classList.add("about");
-                } else if (name === "Contact") {
+                } else if (name === "Contact" || pagePath.includes("contact/")) {
                     wrapper.classList.remove("gallery", "projects", "about");
                     wrapper.classList.add("contact");
                 }
@@ -55,6 +57,7 @@
         max-height: 100px;
         align-items: center;
         text-align: center;
+        background: $color-main;
         transition: background 350ms ease-in-out;
 
         .logo {
@@ -65,6 +68,8 @@
             user-select: none;
             border: none;
             transition: all 150ms ease-in-out;
+            background: none !important;
+            box-shadow: none !important;
 
             &:hover {
                 &:after {
@@ -93,14 +98,20 @@
             background: $highlight-contact;
         }
 
-        .router-link-exact-active {
-            background: $off-white !important;
-            color: $color-main;
-            box-shadow: 0 0 4px 0 $off-white;
-        }
-
         a {
             text-decoration: none;
         }
+    }
+
+    .router-link-active {
+        background: $off-white !important;
+        color: $color-main;
+        box-shadow: 0 0 4px 0 $off-white;
+    }
+
+    .router-link-exact-active {
+        background: $off-white !important;
+        color: $color-main;
+        box-shadow: 0 0 4px 0 $off-white;
     }
 </style>
