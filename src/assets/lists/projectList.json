@@ -1,0 +1,35 @@
+[
+  {
+    "id": 0,
+    "title": "Cool Tablet",
+    "description": "This is a really cool tablet that has quite a lot of words to describe it in the description",
+    "altText": "The Cool Tablet",
+    "src": "tablet",
+    "image": {
+      "webp": "/images/projects/tablet.webp",
+      "jpg": "/images/projects/tablet.jpg"
+    }
+  },
+  {
+    "id": 1,
+    "title": "Cool Table",
+    "description": "This is a really cool table that has quite a lot of words to describe it in the description",
+    "altText": "The Cool Table",
+    "src": "table",
+    "image": {
+      "webp": "/images/projects/table.webp",
+      "jpg": "/images/projects/table.jpg"
+    }
+  },
+  {
+    "id": 2,
+    "title": "Cool Scissors",
+    "description": "This is a really cool pair of scissors that has quite a lot of words to describe it in the description",
+    "altText": "The Cool Scissors",
+    "src": "scissors",
+    "image": {
+      "webp": "/images/projects/scissors.webp",
+      "jpg": "/images/projects/scissors.jpg"
+    }
+  }
+]
