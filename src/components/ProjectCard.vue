@@ -1,5 +1,5 @@
 <template>
-    <router-link class="project-link" :to="'projects/' + url" exact>
+    <router-link class="project-link" :to="{ name: 'Project', query: { testString: 'This is a test string', id: url } }" exact>
         <div class="project-card">
             <picture>
                 <source :srcset="imagePaths.webp" type="image/webp" />
