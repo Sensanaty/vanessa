@@ -6,9 +6,13 @@
     "altText": "The Cool Tablet",
     "src": "tablet",
     "image": {
-      "webp": "/images/projects/tablet.webp",
+      "webp": "/images/projects/test.jpg",
       "jpg": "/images/projects/tablet.jpg"
-    }
+    },
+    "texts": [
+      "I created the smartwatch which integrates symptom management and emergency protocols into the user experience. The smartwatch also synchronizes with the other 2 products, insulin injector and asthma puffer, giving users a real-time tracker with their symptoms. The smartwatch is not only equipped for physical illnesses. It has also considered cases of mental illnesses and ways in which we can help patients manage their symptoms and access help when truly needed. The smartwatch features a PPG sensor which can monitor breathing and heart-rate.",
+      "monke hehe"
+    ]
   },
   {
     "id": 1,
@@ -19,7 +23,10 @@
     "image": {
       "webp": "/images/projects/table.webp",
       "jpg": "/images/projects/table.jpg"
-    }
+    },
+    "texts": [
+      "I created the smartwatch which integrates symptom management and emergency protocols into the user experience. The smartwatch also synchronizes with the other 2 products, insulin injector and asthma puffer, giving users a real-time tracker with their symptoms. The smartwatch is not only equipped for physical illnesses. It has also considered cases of mental illnesses and ways in which we can help patients manage their symptoms and access help when truly needed. The smartwatch features a PPG sensor which can monitor breathing and heart-rate."
+    ]
   },
   {
     "id": 2,
@@ -30,6 +37,23 @@
     "image": {
       "webp": "/images/projects/scissors.webp",
       "jpg": "/images/projects/scissors.jpg"
-    }
+    },
+    "texts": [
+      "I created the smartwatch which integrates symptom management and emergency protocols into the user experience. The smartwatch also synchronizes with the other 2 products, insulin injector and asthma puffer, giving users a real-time tracker with their symptoms. The smartwatch is not only equipped for physical illnesses. It has also considered cases of mental illnesses and ways in which we can help patients manage their symptoms and access help when truly needed. The smartwatch features a PPG sensor which can monitor breathing and heart-rate."
+    ]
+  },
+  {
+    "id": 3,
+    "title": "Cool Scissors",
+    "description": "This is a really cool pair of scissors that has quite a lot of words to describe it in the description",
+    "altText": "The Cool Scissors",
+    "src": "scissors",
+    "image": {
+      "webp": "/images/projects/scissors.webp",
+      "jpg": "/images/projects/scissors.jpg"
+    },
+    "texts": [
+      "I created the smartwatch which integrates symptom management and emergency protocols into the user experience. The smartwatch also synchronizes with the other 2 products, insulin injector and asthma puffer, giving users a real-time tracker with their symptoms. The smartwatch is not only equipped for physical illnesses. It has also considered cases of mental illnesses and ways in which we can help patients manage their symptoms and access help when truly needed. The smartwatch features a PPG sensor which can monitor breathing and heart-rate."
+    ]
   }
 ]
