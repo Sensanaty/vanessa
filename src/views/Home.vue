@@ -26,7 +26,6 @@
         flex-flow: column nowrap;
 
         .hero-text {
-            user-select: none;
             margin-top: 3%;
             text-align: center;
 
@@ -57,6 +56,7 @@
                 box-shadow: 0 0 0 0 $color-main;
                 transition: all 150ms ease-in-out;
                 min-height: 65px;
+                user-select: none;
 
                 &.projects {
                     background: $highlight-main;

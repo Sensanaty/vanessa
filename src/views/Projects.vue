@@ -8,6 +8,7 @@
             :altText="project.altText"
             :imagePaths="project.image"
             :url="project.src"
+            :texts="project.texts"
         />
     </div>
 </template>
@@ -32,8 +33,8 @@
 <style lang="scss">
     .projects-wrapper {
         display: flex;
-        flex-flow: wrap;
-        flex: 1 1 auto;
+        flex-flow: column wrap;
+        flex: 1;
         justify-content: space-around;
         align-items: center;
     }
