@@ -1,6 +1,6 @@
 [
   {
-    "id": 0,
+    "id": "tablet",
     "title": "Cool Tablet",
     "description": "This is a really cool tablet that has quite a lot of words to describe it in the description",
     "altText": "The Cool Tablet",
@@ -15,7 +15,7 @@
     ]
   },
   {
-    "id": 1,
+    "id": "table",
     "title": "Cool Table",
     "description": "This is a really cool table that has quite a lot of words to describe it in the description",
     "altText": "The Cool Table",
@@ -29,7 +29,7 @@
     ]
   },
   {
-    "id": 2,
+    "id": "scissors",
     "title": "Cool Scissors",
     "description": "This is a really cool pair of scissors that has quite a lot of words to describe it in the description",
     "altText": "The Cool Scissors",
@@ -43,7 +43,7 @@
     ]
   },
   {
-    "id": 3,
+    "id": "scissors",
     "title": "Cool Scissors",
     "description": "This is a really cool pair of scissors that has quite a lot of words to describe it in the description",
     "altText": "The Cool Scissors",

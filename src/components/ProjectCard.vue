@@ -1,10 +1,14 @@
 <template>
-    <router-link class="project-link" :to="{ name: 'Project', params: { testString: 'This is a test string', id: url } }" exact>
+    <router-link
+        class="project-link"
+        :to="{ name: 'ProjectPage', params: { id: url } }"
+        exact
+    >
         <div class="project-card">
             <picture>
                 <source :srcset="imagePaths.webp" type="image/webp" />
                 <source :srcset="imagePaths.jpg" type="image/jpeg" />
-                <img :src="imagePaths.jpg" :alt="altText" class="project-image" >
+                <img :src="imagePaths.jpg" :alt="altText" class="project-image" />
             </picture>
             <div class="text-wrapper">
                 <h1 class="project-title">{{ title.toUpperCase() }}</h1>
