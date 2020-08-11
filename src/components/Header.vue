@@ -20,7 +20,6 @@
             changeHeader(name) {
                 const wrapper = document.querySelector(".header-wrapper");
                 const pagePath = this.$route.path;
-                console.log("Route:", name);
 
                 if (name === "Projects" || pagePath.includes("projects/")) {
                     wrapper.classList.remove("gallery", "about", "contact");
