@@ -8,8 +8,8 @@
     "altText": "The Cool Tablet",
     "src": "tablet",
     "image": {
-      "webp": "/images/projects/tablet.webp",
-      "jpg": "/images/projects/tablet.jpg"
+      "webp": "/images/projects/tablet/tablet.webp",
+      "jpg": "/images/projects/tablet/tablet.jpg"
     },
     "texts": {
       "taglines": [
@@ -33,8 +33,8 @@
     "altText": "The Cool Table",
     "src": "table",
     "image": {
-      "webp": "/images/projects/table.webp",
-      "jpg": "/images/projects/table.jpg"
+      "webp": "/images/projects/table/table.webp",
+      "jpg": "/images/projects/table/table.jpg"
     },
     "texts": {
       "taglines": [
@@ -58,8 +58,8 @@
     "altText": "The Cool Scissors",
     "src": "scissors",
     "image": {
-      "webp": "/images/projects/scissors.webp",
-      "jpg": "/images/projects/scissors.jpg"
+      "webp": "/images/projects/scissors/scissors.webp",
+      "jpg": "/images/projects/scissors/scissors.jpg"
     },
     "texts": {
       "taglines": [
