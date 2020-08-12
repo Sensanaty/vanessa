@@ -4,17 +4,25 @@
     "previous": null,
     "next": "table",
     "title": "Cool Tablet",
-    "description": "This is a really cool tablet that has quite a lot of words to describe it in the description",
+    "description": "This is a really cool tablet that has quite a lot of words to describe it in the description and it can have quite a lot of words, and i do mean quite a LOT of words on here",
     "altText": "The Cool Tablet",
     "src": "tablet",
     "image": {
-      "webp": "/images/projects/test.jpg",
+      "webp": "/images/projects/tablet.webp",
       "jpg": "/images/projects/tablet.jpg"
     },
-    "texts": [
-      "I created the smartwatch which integrates symptom management and emergency protocols into the user experience. The smartwatch also synchronizes with the other 2 products, insulin injector and asthma puffer, giving users a real-time tracker with their symptoms. The smartwatch is not only equipped for physical illnesses. It has also considered cases of mental illnesses and ways in which we can help patients manage their symptoms and access help when truly needed. The smartwatch features a PPG sensor which can monitor breathing and heart-rate.",
-      "monke hehe"
-    ]
+    "texts": {
+      "taglines": [
+        "This is where an impactful tagline would go",
+        "And maybe a 2nd one"
+      ],
+      "details": [
+        "This is where smaller text containing any relevant details about the project would be contained",
+        "We can have a lot of these in the container",
+        "And a really big paragraph after this one",
+        "But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. To take a trivial example, which of us ever undertakes laborious physical exercise, except to obtain some advantage from it? But who has any right to find fault with a man who chooses to enjoy a pleasure that has no annoying consequences, or one who avoids a pain that produces no resultant pleasure? On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee"
+      ]
+    }
   },
   {
     "id": "table",
@@ -28,9 +36,18 @@
       "webp": "/images/projects/table.webp",
       "jpg": "/images/projects/table.jpg"
     },
-    "texts": [
-      "I created the smartwatch which integrates symptom management and emergency protocols into the user experience. The smartwatch also synchronizes with the other 2 products, insulin injector and asthma puffer, giving users a real-time tracker with their symptoms. The smartwatch is not only equipped for physical illnesses. It has also considered cases of mental illnesses and ways in which we can help patients manage their symptoms and access help when truly needed. The smartwatch features a PPG sensor which can monitor breathing and heart-rate."
-    ]
+    "texts": {
+      "taglines": [
+        "This is where an impactful tagline would go",
+        "And maybe a 2nd one"
+      ],
+      "details": [
+        "This is where smaller text containing any relevant details about the project would be contained",
+        "We can have a lot of these in the container",
+        "And a really big paragraph after this one",
+        "But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. To take a trivial example, which of us ever undertakes laborious physical exercise, except to obtain some advantage from it? But who has any right to find fault with a man who chooses to enjoy a pleasure that has no annoying consequences, or one who avoids a pain that produces no resultant pleasure? On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee"
+      ]
+    }
   },
   {
     "id": "scissors",
@@ -44,8 +61,17 @@
       "webp": "/images/projects/scissors.webp",
       "jpg": "/images/projects/scissors.jpg"
     },
-    "texts": [
-      "I created the smartwatch which integrates symptom management and emergency protocols into the user experience. The smartwatch also synchronizes with the other 2 products, insulin injector and asthma puffer, giving users a real-time tracker with their symptoms. The smartwatch is not only equipped for physical illnesses. It has also considered cases of mental illnesses and ways in which we can help patients manage their symptoms and access help when truly needed. The smartwatch features a PPG sensor which can monitor breathing and heart-rate."
-    ]
+    "texts": {
+      "taglines": [
+        "This is where an impactful tagline would go",
+        "And maybe a 2nd one"
+      ],
+      "details": [
+        "This is where smaller text containing any relevant details about the project would be contained",
+        "We can have a lot of these in the container",
+        "And a really big paragraph after this one",
+        "But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. To take a trivial example, which of us ever undertakes laborious physical exercise, except to obtain some advantage from it? But who has any right to find fault with a man who chooses to enjoy a pleasure that has no annoying consequences, or one who avoids a pain that produces no resultant pleasure? On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee"
+      ]
+    }
   }
 ]
