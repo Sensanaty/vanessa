@@ -9,6 +9,22 @@
             </div>
         </div>
 
+        <transition name="expand-text" mode="in-out">
+            <div class="project-body" v-if="expand">
+                <div class="tagline-wrapper">
+                    <h2 class="tagline" v-for="(tagline, index) in project.texts.taglines" :key="Math.random() + index">
+                        {{ tagline }}
+                    </h2>
+                </div>
+
+                <div class="detail-wrapper">
+                    <p class="details" v-for="(detail, index) in project.texts.details" :key="Math.random() + index">
+                        {{ detail }}
+                    </p>
+                </div>
+            </div>
+        </transition>
+    </div>
 </template>
 
 <script>
@@ -127,4 +143,42 @@
         }
     }
 
+    .expand-text-enter-active,
+    .expand-text-leave-active {
+        transition: all 350ms;
+        max-height: 600px;
+    }
+    .expand-text-enter,
+    .expand-text-leave-to {
+        opacity: 0;
+        max-height: 0;
+    }
+
+    .project-body {
+        background: $color-secondary;
+        width: 90%;
+        height: 100%;
+        padding: 2%;
+        display: flex;
+        flex-flow: column nowrap;
+        line-height: 1.1;
+
+        .tagline-wrapper {
+            text-align: center;
+
+            .tagline {
+                font-size: 2.3rem;
+            }
+        }
+
+        .detail-wrapper {
+            margin-top: 25px;
+            text-align: center;
+
+            .details {
+                margin: 10px 0;
+                font-size: 1.3rem;
+            }
+        }
+    }
 </style>
