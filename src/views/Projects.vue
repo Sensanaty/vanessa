@@ -32,7 +32,6 @@
 <style lang="scss">
     .projects-wrapper {
         display: flex;
-        flex-flow: column wrap;
         flex: 1;
         justify-content: space-around;
         align-items: center;
