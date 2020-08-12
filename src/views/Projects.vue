@@ -1,14 +1,13 @@
 <template>
     <div class="content-wrapper projects-wrapper">
         <ProjectCard
-            v-for="project in ProjectList"
-            :key="project.id"
+            v-for="(project, index) in ProjectList"
+            :key="index"
             :title="project.title"
             :description="project.description"
             :altText="project.altText"
             :imagePaths="project.image"
-            :url="project.src"
-            :texts="project.texts"
+            :url="project.id"
         />
     </div>
 </template>
