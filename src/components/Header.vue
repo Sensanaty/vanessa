@@ -51,8 +51,7 @@
     .header-wrapper {
         display: flex;
         flex-flow: row nowrap;
-        height: 100px;
-        min-height: 100px;
+        min-height: 85px;
         max-height: 100px;
         align-items: center;
         text-align: center;
@@ -63,7 +62,7 @@
             color: $color-main;
             margin-right: auto;
             margin-left: 40px;
-            font-size: 3rem;
+            font-size: 3.1rem;
             user-select: none;
             border: none;
             transition: all 150ms ease-in-out;
