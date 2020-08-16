@@ -2,7 +2,7 @@
     <div class="home-wrapper">
         <div class="hero-text">
             <h1 class="title">PRODUCTS ARE FRIENDS</h1>
-            <h1 class="subtitle">NOT TRASH</h1>
+            <h2 class="subtitle">NOT TRASH</h2>
         </div>
         <nav class="hero-navigation">
             <router-link to="/projects" class="navlink projects" exact>PROJECTS</router-link>
