@@ -1,45 +1,35 @@
 <template>
-    <div class="project-page" v-if="project">
-        <div class="project-header">
-            <h1 class="title">{{ project.title }}</h1>
-            <h3 class="description">{{ project.description }}</h3>
-            <div :class="['expand-button', expand ? 'expanded' : null]" v-on:click="expand = !expand">
-                <pre>{{ expand ? "READ LESS" : "READ MORE" }}</pre>
-                <ExpandArrow />
-            </div>
+    <div class="project-page-wrapper" v-if="project">
+        <router-link :to="{ name: 'ProjectPage', params: { id: 'table'} }" >Table</router-link>
+        <div class="link-wrapper">
+            <router-link to="/projects" class="back-link link" exact>
+                <span aria-hidden="true">←</span>Back to Projects
+            </router-link>
+
+            <router-link :to="`/gallery/${project.id}`" class="gallery-link link" exact>
+                See the Pictures <span aria-hidden="true">→</span>
+            </router-link>
         </div>
 
-        <transition name="expand-text" mode="in-out">
-            <div class="project-body" v-if="expand">
-                <div class="tagline-wrapper">
-                    <h2 class="tagline" v-for="(tagline, index) in project.texts.taglines" :key="Math.random() + index">
-                        {{ tagline }}
-                    </h2>
-                </div>
+        <div class="project-hero-wrapper">
+            <h1 class="hero-title">{{ project.title }}</h1>
+            <h2 class="hero-description">{{ project.short_description }}</h2>
+        </div>
 
-                <div class="detail-wrapper">
-                    <p class="details" v-for="(detail, index) in project.texts.details" :key="Math.random() + index">
-                        {{ detail }}
-                    </p>
-                </div>
-            </div>
-        </transition>
+        <div class="project-detail-wrapper">
+            <p class="detail" v-for="(description, index) in project.descriptions" :key="index">{{ description }}</p>
+        </div>
     </div>
 </template>
 
 <script>
     import ProjectList from "@/assets/lists/projectList.json";
-    import ExpandArrow from "@/assets/icons/arrow-down.svg";
 
     export default {
         name: "ProjectPage",
-        components: {
-            ExpandArrow
-        },
         data() {
             return {
-                project: null,
-                expand: false
+                project: null
             };
         },
         methods: {
@@ -65,120 +55,91 @@
 </script>
 
 <style lang="scss">
-    .project-page {
+    .project-page-wrapper {
+        margin: 1.5%;
         display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-flow: column nowrap;
-        margin: 2% 0;
+        flex-flow: column;
     }
 
-    .project-header {
-        width: 95%;
-        background: $highlight-main;
-        color: $color-main;
-        padding: 1.5% 2% 0.5% 2%;
-        line-height: 1;
+    .link-wrapper {
         display: flex;
-        flex-flow: column wrap;
-        justify-content: center;
-        align-items: center;
+        justify-content: space-between;
+    }
 
-        .expand-button {
-            cursor: pointer;
-            display: flex;
-            flex-flow: column;
-            justify-content: center;
-            align-items: center;
-            margin: 20px 0 5px 0;
+    .link {
+        text-decoration: none;
+        color: $off-white;
+        user-select: none;
+        font-size: 1.8rem;
+        transition: all 200ms ease-in-out;
 
-            pre {
-                padding: 1px 0 0 0;
-                margin: 10px 0;
-                user-select: none;
-                cursor: pointer;
-                font-size: 1.4rem;
-                transition: all 150ms ease-in-out;
-            }
+        span {
+            display: inline-block;
+            transition: transform 150ms ease-in-out;
+        }
 
-            svg {
-                height: 20px;
-                transition: all 150ms ease-in-out;
+        &:hover {
+            color: $highlight-main;
+        }
+
+        &.back-link {
+            margin: 0 0 15px 15px;
+
+            span {
+                margin-right: 5px;
             }
 
             &:hover {
-                pre {
-                    color: $off-white;
-                }
-
-                svg {
-                    fill: $off-white;
-                }
-            }
-
-            &.expanded {
-                svg {
-                    transform: rotate(180deg);
-                }
-
-                pre {
-                    margin: 10px 0 9px 0;
+                span {
+                    transform: translateX(-3px);
                 }
             }
         }
 
-        .title,
-        .description {
-            color: $color-secondary;
-            text-align: center;
-        }
+        &.gallery-link {
+            margin: 0 15px 20px 0;
 
-        .title {
-            font-size: 4rem;
-            margin: 0 0 15px 0;
-        }
-
-        .description {
-            font-size: 2rem;
+            &:hover {
+                span {
+                    transform: translateX(3px);
+                }
+            }
         }
     }
 
-    .expand-text-enter-active,
-    .expand-text-leave-active {
-        transition: all 350ms;
-        max-height: 600px;
-    }
-    .expand-text-enter,
-    .expand-text-leave-to {
-        opacity: 0;
-        max-height: 0;
-    }
-
-    .project-body {
-        background: $color-secondary;
-        width: 90%;
-        height: 100%;
-        padding: 2%;
+    .project-hero-wrapper {
         display: flex;
-        flex-flow: column nowrap;
-        line-height: 1.1;
+        flex-flow: column;
 
-        .tagline-wrapper {
-            text-align: center;
-
-            .tagline {
-                font-size: 2.3rem;
-            }
+        .hero-title {
+            margin: 0 0 10px 0;
+            font-size: 9rem;
+            display: inline-block;
+            color: $highlight-main;
         }
 
-        .detail-wrapper {
-            margin-top: 25px;
-            text-align: center;
+        .hero-description {
+            font-size: 4rem;
+            margin: 5px 0;
+            text-decoration: underline $highlight-main;
+        }
+    }
 
-            .details {
-                margin: 10px 0;
-                font-size: 1.3rem;
-            }
+    .project-detail-wrapper {
+        margin: 25px auto 10px auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-flow: column;
+        text-align: justify;
+        width: 80%;
+
+        .detail {
+            margin: 15px 0;
+            font-size: 1.6rem;
+            line-height: 1.15;
+            text-align: justify;
+            font-family: "Aeonik Medium", sans-serif;
         }
     }
 </style>

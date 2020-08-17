@@ -32,8 +32,9 @@
 <style lang="scss">
     .projects-wrapper {
         display: flex;
-        flex: 1;
-        justify-content: space-around;
+        flex: 1 0 auto;
+        justify-content: space-evenly;
         align-items: center;
+        flex-flow: row wrap;
     }
 </style>
