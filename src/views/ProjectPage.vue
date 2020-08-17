@@ -1,6 +1,5 @@
 <template>
     <div class="project-page-wrapper" v-if="project">
-        <router-link :to="{ name: 'ProjectPage', params: { id: 'table'} }" >Table</router-link>
         <div class="link-wrapper">
             <router-link to="/projects" class="back-link link" exact>
                 <span aria-hidden="true">←</span>Back to Projects
