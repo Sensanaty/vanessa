@@ -20,7 +20,6 @@
             changeHeader(name) {
                 const wrapper = document.querySelector(".header-wrapper");
                 const pagePath = this.$route.path;
-                console.log("Route:", name);
 
                 if (name === "Projects" || pagePath.includes("projects/")) {
                     wrapper.classList.remove("gallery", "about", "contact");
@@ -52,8 +51,7 @@
     .header-wrapper {
         display: flex;
         flex-flow: row nowrap;
-        height: 100px;
-        min-height: 100px;
+        min-height: 85px;
         max-height: 100px;
         align-items: center;
         text-align: center;
@@ -64,7 +62,7 @@
             color: $color-main;
             margin-right: auto;
             margin-left: 40px;
-            font-size: 3rem;
+            font-size: 3.1rem;
             user-select: none;
             border: none;
             transition: all 150ms ease-in-out;

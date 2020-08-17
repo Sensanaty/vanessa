@@ -1,10 +1,10 @@
 <template>
-    <router-link class="project-link" :to="'projects/' + url" exact>
+    <router-link class="project-link" :to="{ name: 'ProjectPage', params: { id: url } }" exact>
         <div class="project-card">
             <picture>
                 <source :srcset="imagePaths.webp" type="image/webp" />
                 <source :srcset="imagePaths.jpg" type="image/jpeg" />
-                <img :src="imagePaths.jpg" :alt="altText" class="project-image" >
+                <img :src="imagePaths.jpg" :alt="altText" class="project-image" />
             </picture>
             <div class="text-wrapper">
                 <h1 class="project-title">{{ title.toUpperCase() }}</h1>
@@ -29,18 +29,15 @@
 
 <style lang="scss">
     .project-card {
-        height: 550px;
-        width: 550px;
+        height: 770px;
+        width: 770px;
         position: relative;
-        margin: 15px;
-        box-shadow: 0 4px 4px 4px transparentize(black, 0.7), 0 4px 6px 6px transparentize(black, 0.8),
-            0 4px 8px 8px transparentize(black, 0.9);
+        margin: 30px 0;
         background-image: url("/images/ohmlaut.svg");
 
         .project-title,
         .project-description {
             text-align: center;
-            display: none;
             transition: all 5ms ease-in-out;
             opacity: 0;
         }
@@ -52,7 +49,8 @@
         }
 
         .project-description {
-            font-size: 1.15rem;
+            font-family: "Aeonik Medium", sans-serif;
+            font-size: 1.5rem;
             margin: 0 15px 10px 15px;
         }
 
@@ -69,33 +67,31 @@
         }
 
         &:hover {
-            box-shadow: 0 4px 4px 4px transparentize(black, 0.8), 0 4px 6px 6px transparentize(black, 0.8),
-                0 4px 8px 8px transparentize(black, 0.8);
-
             .text-wrapper {
                 opacity: 1;
-                height: 40%;
-                bottom: 0;
             }
 
             .project-title,
             .project-description {
-                display: block;
                 opacity: 1;
             }
         }
     }
 
     .text-wrapper {
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+        align-items: center;
         width: 100%;
         user-select: none;
         opacity: 0;
-        height: 29%;
+        height: 100%;
         padding: 15px;
         position: absolute;
         bottom: 0;
         left: 0;
         background: transparentize($color-main, 0.1);
-        transition: opacity 170ms ease-in-out, height 200ms ease-in-out, box-shadow 200ms ease-in-out;
+        transition: opacity 170ms ease-in-out;
     }
 </style>

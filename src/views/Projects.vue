@@ -1,19 +1,19 @@
 <template>
     <div class="content-wrapper projects-wrapper">
         <ProjectCard
-            v-for="project in ProjectList"
-            :key="project.id"
+            v-for="(project, index) in ProjectList"
+            :key="index"
             :title="project.title"
             :description="project.description"
             :altText="project.altText"
             :imagePaths="project.image"
-            :url="project.src"
+            :url="project.id"
         />
     </div>
 </template>
 
 <script>
-    import ProjectCard from "@/components/ProjectCard";
+    import ProjectCard from "@/components/projects/ProjectCard";
     import ProjectList from "@/assets/lists/projectList.json";
 
     export default {
@@ -32,9 +32,9 @@
 <style lang="scss">
     .projects-wrapper {
         display: flex;
-        flex-flow: wrap;
-        flex: 1 1 auto;
-        justify-content: space-around;
+        flex: 1 0 auto;
+        justify-content: space-evenly;
         align-items: center;
+        flex-flow: row wrap;
     }
 </style>

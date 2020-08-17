@@ -1,13 +1,30 @@
 <template>
     <footer>
-        <nav>
-            <a href="https://behance.net" class="social-link"><BehanceIcon /></a>
-            <a href="https://google.com" class="social-link"><InstagramIcon /></a>
-            <a href="https://google.com" class="social-link"><LinkedinIcon /></a>
-            <a href="https://google.com" class="social-link"><FacebookIcon /></a>
+        
+        <nav aria-label="Footer Navigation Links">
+            <a href="https://behance.net" class="social-link" aria-label="Vanessa's Behance Profile">
+                <BehanceIcon />
+            </a>
+            <a href="https://google.com" class="social-link" aria-label="Vanessa's Instagram Profile">
+                <InstagramIcon />
+            </a>
+            <a href="https://google.com" class="social-link" aria-label="Vanessa's LinkedIn Profile">
+                <LinkedinIcon />
+            </a>
+            <a href="https://google.com" class="social-link" aria-label="Vanessa's Facebook Profile">
+                <FacebookIcon />
+            </a>
         </nav>
-        <div class="copyright">Copyright © 2020 <span>Vanessa Sölter</span></div>
-        <div class="plug">Made with <span>&lt;3</span> by <a href="https://github.com/Sensanaty">Sensanaty</a></div>
+
+        <div class="copyright">
+            Copyright <span aria-hidden="true">©</span> 2020 <span class="name-text">Vanessa Sölter</span>
+        </div>
+
+        <div class="plug">
+            Made with <span aria-label="Heart Emoticon">&lt;3</span> by
+            <a href="https://github.com/Sensanaty" aria-label="Sensanaty, Web Developer">Sensanaty</a>
+        </div>
+
     </footer>
 </template>
 
@@ -59,7 +76,7 @@
             font-size: 2rem;
             user-select: none;
 
-            span {
+            .name-text {
                 user-select: all;
             }
         }

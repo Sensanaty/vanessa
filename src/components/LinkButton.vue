@@ -18,7 +18,7 @@
         padding: 20px;
         color: $off-white;
         background: $color-main;
-        font-size: 1.5rem;
+        font-size: 1.35rem;
         transition: background 350ms ease-in-out, box-shadow 350ms ease-in-out, color 175ms ease-in-out;
         box-shadow: 0 0 0 0 opacify($off-white, 1);
     }

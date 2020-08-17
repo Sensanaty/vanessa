@@ -1,11 +1,10 @@
 @import "./colors";
 @import "./mixins/fontface";
 @include fontface("Aeonik Bold", "../assets/fonts/aeonik-bold/Aeonik-Bold", "bold");
-
-$font-bold: "Aeonik Bold", sans-serif;
+@include fontface("Aeonik Medium", "../assets/fonts/aeonik-medium/Aeonik-Medium");
 
 * {
-    font-family: $font-bold;
+    font-family: "Aeonik Bold", sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
