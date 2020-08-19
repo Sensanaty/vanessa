@@ -36,7 +36,8 @@ const routes = [
     {
         path: "/gallery/:id",
         name: "GalleryPage",
-        component: GalleryPage
+        component: GalleryPage,
+        props: true
     },
     {
         path: "/about",
