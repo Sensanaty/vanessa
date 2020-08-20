@@ -33,15 +33,7 @@
         },
         methods: {
             setProjectPage(projectDetails) {
-                this.logDetails(projectDetails);
                 this.project = projectDetails;
-            },
-            logDetails(project) {
-                console.log("Title:", project.title);
-                console.log("Description:", project.description);
-                console.log("Alt Text:", project.altText);
-                console.log("Image:", project.image);
-                console.log("Texts:", project.texts);
             }
         },
         beforeRouteEnter(to, from, next) {
