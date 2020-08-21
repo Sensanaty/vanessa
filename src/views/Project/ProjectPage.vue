@@ -45,16 +45,12 @@
     };
 </script>
 
-<style lang="scss">
-    .project-page-wrapper {
-        margin: 1.5%;
-        display: flex;
-        flex-flow: column;
-    }
-
+<style lang="scss" scoped>
     .link-wrapper {
         display: flex;
         justify-content: space-between;
+        position: absolute;
+        margin-top: 10px;
     }
 
     .link {
@@ -74,7 +70,7 @@
         }
 
         &.back-link {
-            margin: 0 0 15px 15px;
+            margin: 0 30px 15px 15px;
 
             span {
                 margin-right: 5px;
@@ -88,7 +84,7 @@
         }
 
         &.gallery-link {
-            margin: 0 15px 20px 0;
+            margin: 0 15px 20px 30px;
 
             &:hover {
                 span {
@@ -101,6 +97,7 @@
     .project-hero-wrapper {
         display: flex;
         flex-flow: column;
+        margin: 2.5%;
 
         .hero-title {
             margin: 0 0 10px 0;
