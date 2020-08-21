@@ -19,7 +19,6 @@
                         alt=""
                         class="carousel-image"
                         :src="`/images/gallery/${currentRoute}/${image}.jpg`"
-                        loading="lazy"
                     />
                 </picture>
             </div>
