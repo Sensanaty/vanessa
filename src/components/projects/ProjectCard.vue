@@ -29,8 +29,8 @@
 
 <style lang="scss">
     .project-card {
-        height: 770px;
-        width: 770px;
+        height: 650px;
+        width: 650px;
         position: relative;
         margin: 30px 0;
         background-image: url("/images/ohmlaut.svg");
