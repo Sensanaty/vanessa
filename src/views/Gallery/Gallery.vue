@@ -1,5 +1,7 @@
 <template>
-    <h1>Gallery</h1>
+    <div class="gallery-wrapper">
+        Gallery
+    </div>
 </template>
 
 <script>
@@ -7,3 +9,5 @@
         name: "Gallery"
     };
 </script>
+
+<style lang="scss"></style>

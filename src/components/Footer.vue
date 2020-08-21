@@ -1,6 +1,5 @@
 <template>
     <footer>
-        
         <nav aria-label="Footer Navigation Links">
             <a href="https://behance.net" class="social-link" aria-label="Vanessa's Behance Profile">
                 <BehanceIcon />
@@ -24,7 +23,6 @@
             Made with <span aria-label="Heart Emoticon">&lt;3</span> by
             <a href="https://github.com/Sensanaty" aria-label="Sensanaty, Web Developer">Sensanaty</a>
         </div>
-
     </footer>
 </template>
 

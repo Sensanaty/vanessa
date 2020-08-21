@@ -5,7 +5,6 @@
     "description": "This is a really cool smart watch that has quite a lot of words to describe it in the description and it can have quite a lot of words, and i do mean quite a LOT of words on here",
     "short_description": "the future of medical design",
     "altText": "The Cool Tablet",
-    "src": "tablet",
     "image": {
       "webp": "/images/projects/tablet/tablet.webp",
       "jpg": "/images/projects/tablet/tablet.jpg"
@@ -21,7 +20,6 @@
     "description": "This is a really cool table that has quite a lot of words to describe it in the description",
     "short_description": "a shorter description than the one on the project card",
     "altText": "The Cool Table",
-    "src": "table",
     "image": {
       "webp": "/images/projects/table/table.webp",
       "jpg": "/images/projects/table/table.jpg"
@@ -39,7 +37,6 @@
     "description": "This is a really cool pair of scissors that has quite a lot of words to describe it in the description",
     "short_description": "a shorter description than the one on the project card",
     "altText": "The Cool Scissors",
-    "src": "scissors",
     "image": {
       "webp": "/images/projects/scissors/scissors.webp",
       "jpg": "/images/projects/scissors/scissors.jpg"
