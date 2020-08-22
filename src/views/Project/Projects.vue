@@ -13,7 +13,7 @@
 </template>
 
 <script>
-    import ProjectCard from "@/components/projects/ProjectCard";
+    import ProjectCard from "@/components/ProjectCard";
     import ProjectList from "@/assets/lists/projectList.json";
 
     export default {
