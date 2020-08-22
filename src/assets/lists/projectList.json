@@ -47,5 +47,20 @@
       "And a really big paragraph after this one",
       "But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. To take a trivial example, which of us ever undertakes laborious physical exercise, except to obtain some advantage from it? But who has any right to find fault with a man who chooses to enjoy a pleasure that has no annoying consequences, or one who avoids a pain that produces no resultant pleasure? On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee"
     ]
+  },
+  {
+    "id": "remindoor",
+    "title": "ReminDoor",
+    "description": "This is a really cool door that has quite a lot of words to describe it in the description",
+    "short_description": "a shorter description than the one on the project card",
+    "altText": "The Cool door",
+    "image": {
+      "webp": "/images/projects/door/door.webp",
+      "jpg": "/images/projects/door/door.jpg"
+    },
+    "descriptions": [
+      "We can have some paragraphs of text to describe what the project is about here, under the hero text above. In my opinion, it's best to not have too many words, as it can be very visually busy. I'm just gonna keep adding words here as padding so that we can see what things look like when it's properly filled out. As you can see, we have a lot of space to work with here, but I think it's best to have up to 2 paragraphs consisting around 600 characters each. I'm going to add more random words here to reach that 600 character limit, then I'm going to copy and paste this paragraph a 2nd time.",
+      "We can have some paragraphs of text to describe what the project is about here, under the hero text above. In my opinion, it's best to not have too many words, as it can be very visually busy. I'm just gonna keep adding words here as padding so that we can see what things look like when it's properly filled out. As you can see, we have a lot of space to work with here, but I think it's best to have up to 2 paragraphs consisting around 600 characters each. I'm going to add more random words here to reach that 600 character limit, then I'm going to copy and paste this paragraph a 2nd time."
+    ]
   }
 ]
