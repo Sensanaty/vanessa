@@ -69,7 +69,7 @@
             populatePage() {
                 const currentGallery = ImageList.find(image => image.id === this.$route.params.id);
                 console.log(currentGallery);
-                this.images = currentGallery.imageNames;
+                this.images = currentGallery.galleryPageImageNames;
                 this.currentRoute = this.$route.params.id;
                 this.title = currentGallery.title;
                 this.checkForProject();

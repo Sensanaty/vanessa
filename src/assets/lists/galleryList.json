@@ -1,19 +1,17 @@
 [
   {
     "id": "mymed",
-    "imageNames": [
-      "0",
-      "1",
-      "2",
-      "3",
-      "4",
-      "5",
-      "6",
-      "7",
-      "8",
-      "9",
-      "10"
-    ],
+    "galleryPageImageNames": ["0","1","2","3","4","5","6","7","8","9","10"],
     "title": "MyMed Smartwatch"
+  },
+  {
+    "id": "scissors",
+    "galleryPageImageNames": ["0","1","2","3","4","5","6","7","8","9"],
+    "title": "Cool Scissors"
+  },
+  {
+    "id": "table",
+    "galleryPageImageNames": ["0","1","2","3","4","5","6","7","8","9"],
+    "title": "Cool Table"
   }
 ]
