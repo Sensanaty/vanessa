@@ -1,5 +1,5 @@
 <template>
-    <div class="gallery-wrapper">
+    <div class="gallery-page-wrapper">
         <div class="link-wrapper">
             <router-link to="/gallery" class="back-link link" exact>
                 <span aria-hidden="true">←</span>Back to Gallery
@@ -16,9 +16,16 @@
                     <source :srcset="`/images/gallery/${currentRoute}/${image}.webp`" type="image/webp" />
                     <source :srcset="`/images/gallery/${currentRoute}/${image}.jpg`" type="image/jpeg" />
                     <img
-                        alt=""
+                        :alt="altTexts[index]"
                         class="carousel-image"
                         :src="`/images/gallery/${currentRoute}/${image}.jpg`"
+                        :loading="
+                            index === 0 ||
+                            index === 1 ||
+                            index === 2 ||
+                            index === images.length - 1 ||
+                            index === images.length - 2 ? 'eager' : 'lazy'
+                        "
                     />
                 </picture>
             </div>
@@ -52,7 +59,8 @@
                 images: null,
                 currentRoute: null,
                 title: null,
-                hasProject: false
+                hasProject: false,
+                altTexts: null
             };
         },
         created() {
@@ -68,11 +76,12 @@
             },
             populatePage() {
                 const currentGallery = ImageList.find(image => image.id === this.$route.params.id);
-                console.log(currentGallery);
                 this.images = currentGallery.galleryPageImageNames;
                 this.currentRoute = this.$route.params.id;
                 this.title = currentGallery.title;
+                this.altTexts = currentGallery.altText;
                 this.checkForProject();
+                console.log(currentGallery);
             },
             checkForProject() {
                 if (ProjectList.find(project => project.id === this.$route.params.id)) {
@@ -146,6 +155,7 @@
         .carousel-image {
             width: 100%;
             height: 100%;
+            background: #272727;
         }
     }
 </style>
