@@ -45,14 +45,15 @@
 
         .project-title {
             text-align: center;
-            margin-bottom: 10px;
-            font-size: 2.3rem;
+            margin-bottom: 15px;
+            font-size: 3rem;
         }
 
         .project-description {
             font-family: "Aeonik Medium", sans-serif;
             font-size: 1.5rem;
             margin: 0 15px 10px 15px;
+            word-spacing: -2px;
         }
 
         img {

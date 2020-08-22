@@ -1,5 +1,5 @@
 <template>
-    <div class="gallery-wrapper">
+    <div class="content-wrapper gallery-wrapper">
         <GalleryCard
             v-for="gallery in galleries"
             :key="gallery.id"
