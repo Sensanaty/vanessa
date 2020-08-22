@@ -4,6 +4,9 @@
 
 <script>
     export default {
-        name: "About"
+        name: "About",
+        metaInfo: {
+            title: "Vanessa | About"
+        }
     };
 </script>

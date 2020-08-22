@@ -18,6 +18,9 @@
 
     export default {
         name: "Projects",
+        metaInfo: {
+            title: "Vanessa | Projects",
+        },
         components: {
             ProjectCard
         },

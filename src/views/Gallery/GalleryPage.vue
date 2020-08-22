@@ -33,6 +33,11 @@
 
     export default {
         name: "GalleryPage",
+        metaInfo() {
+            return {
+                title: "Gallery | " + this.title
+            };
+        },
         components: {
             Flickity
         },
@@ -52,6 +57,7 @@
         },
         created() {
             this.populatePage();
+            this.$route.meta.title = "Gallery | " + this.title
         },
         methods: {
             next() {

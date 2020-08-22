@@ -15,7 +15,17 @@
 
 <script>
     export default {
-        name: "Home"
+        name: "Home",
+        metaInfo: {
+            title: "Vanessa Sölter",
+            meta: [
+                {
+                    name: "description",
+                    content:
+                        "Emerging, passionate, dedicated and driven freelance industrial designer based in Australia who specializes in 3D modelling, CAD, UX design and Graphic design"
+                }
+            ]
+        }
     };
 </script>
 

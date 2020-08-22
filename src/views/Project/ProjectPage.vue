@@ -26,6 +26,11 @@
 
     export default {
         name: "ProjectPage",
+        metaInfo() {
+            return {
+                title: "Project | " + this.project.title
+            };
+        },
         data() {
             return {
                 project: null

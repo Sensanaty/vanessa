@@ -1,12 +1,17 @@
 <template>
     <div class="gallery-wrapper">
-        Gallery
+        <router-link :to="{ name: 'GalleryPage', params: { testString: 'This is a test string', id: 1 } }" exact>
+            Link
+        </router-link>
     </div>
 </template>
 
 <script>
     export default {
-        name: "Gallery"
+        name: "Gallery",
+        metaInfo: {
+            title: "Vanessa | Gallery"
+        }
     };
 </script>
 
