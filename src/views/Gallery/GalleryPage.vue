@@ -10,7 +10,7 @@
             </router-link>
         </div>
 
-        <Flickity ref="flickity" class="carousel" :options="flickityOptions">
+        <Flickity ref="flickity" class="carousel" :options="flickityOptions" autofocus>
             <div class="carousel-cell" v-for="(image, index) in images" :key="index">
                 <picture>
                     <source :srcset="`/images/gallery/${currentRoute}/${image}.webp`" type="image/webp" />
