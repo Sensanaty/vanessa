@@ -24,7 +24,9 @@
                             index === 1 ||
                             index === 2 ||
                             index === images.length - 1 ||
-                            index === images.length - 2 ? 'eager' : 'lazy'
+                            index === images.length - 2
+                                ? 'eager'
+                                : 'lazy'
                         "
                     />
                 </picture>
@@ -65,7 +67,7 @@
         },
         created() {
             this.populatePage();
-            this.$route.meta.title = "Gallery | " + this.title
+            this.$route.meta.title = "Gallery | " + this.title;
         },
         methods: {
             next() {

@@ -19,7 +19,7 @@
     export default {
         name: "Projects",
         metaInfo: {
-            title: "Vanessa | Projects",
+            title: "Vanessa | Projects"
         },
         components: {
             ProjectCard
