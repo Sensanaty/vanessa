@@ -56,5 +56,24 @@
     ],
     "displayImage": "1",
     "title": "Cool Table"
+  },
+  {
+    "id": "noproject",
+    "galleryPageImageNames": ["0","1","2","3","4","5","6","7","8","9"],
+    "altText":
+    [
+      "Alt text for the 1st image",
+      "Alt text for the 2nd image",
+      "Alt text for the 3rd image",
+      "Alt text for the 4th image",
+      "Alt text for the 5th image",
+      "Alt text for the 6th image",
+      "Alt text for the 7th image",
+      "Alt text for the 8th image",
+      "Alt text for the 9th image",
+      "Alt text for the 10th image"
+    ],
+    "displayImage": "4",
+    "title": "No Attached Project"
   }
 ]
