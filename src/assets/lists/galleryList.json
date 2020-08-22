@@ -2,16 +2,59 @@
   {
     "id": "mymed",
     "galleryPageImageNames": ["0","1","2","3","4","5","6","7","8","9","10"],
+    "altText":
+    [
+      "Alt text for the 1st image",
+      "Alt text for the 2nd image",
+      "Alt text for the 3rd image",
+      "Alt text for the 4th image",
+      "Alt text for the 5th image",
+      "Alt text for the 6th image",
+      "Alt text for the 7th image",
+      "Alt text for the 8th image",
+      "Alt text for the 9th image",
+      "Alt text for the 10th image",
+      "Alt text for the 11th image"
+    ],
+    "displayImage": "3",
     "title": "MyMed Smartwatch"
   },
   {
     "id": "scissors",
     "galleryPageImageNames": ["0","1","2","3","4","5","6","7","8","9"],
+    "altText":
+    [
+      "Alt text for the 1st image",
+      "Alt text for the 2nd image",
+      "Alt text for the 3rd image",
+      "Alt text for the 4th image",
+      "Alt text for the 5th image",
+      "Alt text for the 6th image",
+      "Alt text for the 7th image",
+      "Alt text for the 8th image",
+      "Alt text for the 9th image",
+      "Alt text for the 10th image"
+    ],
+    "displayImage": "6",
     "title": "Cool Scissors"
   },
   {
     "id": "table",
     "galleryPageImageNames": ["0","1","2","3","4","5","6","7","8","9"],
+    "altText":
+    [
+      "Alt text for the 1st image",
+      "Alt text for the 2nd image",
+      "Alt text for the 3rd image",
+      "Alt text for the 4th image",
+      "Alt text for the 5th image",
+      "Alt text for the 6th image",
+      "Alt text for the 7th image",
+      "Alt text for the 8th image",
+      "Alt text for the 9th image",
+      "Alt text for the 10th image"
+    ],
+    "displayImage": "1",
     "title": "Cool Table"
   }
 ]
