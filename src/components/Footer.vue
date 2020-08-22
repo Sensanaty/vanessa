@@ -1,22 +1,44 @@
 <template>
     <footer>
         <nav aria-label="Footer Navigation Links">
-            <a href="https://behance.net" class="social-link" aria-label="Vanessa's Behance Profile">
+            <a
+                href="https://www.behance.net/vasequise"
+                class="social-link"
+                aria-label="Vanessa's Behance Profile"
+                target="_blank"
+            >
                 <BehanceIcon />
             </a>
-            <a href="https://google.com" class="social-link" aria-label="Vanessa's Instagram Profile">
+            <a
+                href="https://www.instagram.com/vxsxltxr/"
+                class="social-link"
+                aria-label="Vanessa's Instagram Profile"
+                target="_blank"
+            >
                 <InstagramIcon />
             </a>
-            <a href="https://google.com" class="social-link" aria-label="Vanessa's LinkedIn Profile">
+            <a
+                href="https://www.linkedin.com/in/vsoelter/"
+                class="social-link"
+                aria-label="Vanessa's LinkedIn Profile"
+                target="_blank"
+            >
                 <LinkedinIcon />
             </a>
-            <a href="https://google.com" class="social-link" aria-label="Vanessa's Facebook Profile">
+            <a
+                href="https://www.facebook.com/soelterdesign/"
+                class="social-link"
+                aria-label="Vanessa's Facebook Profile"
+                target="_blank"
+            >
                 <FacebookIcon />
             </a>
         </nav>
 
-        <div class="copyright">
-            Copyright <span aria-hidden="true">©</span> 2020 <span class="name-text">Vanessa Sölter</span>
+        <div class="middle">
+            <span class="legal"><router-link to="/legal">Legal</router-link></span> | <span aria-hidden="true">©</span>
+            <span class="name-text">Vanessa Sölter</span> |
+            <span class="acknowledgments"><router-link to="/reckognitions">Recognitions</router-link></span>
         </div>
 
         <div class="plug">
