@@ -23,8 +23,10 @@
                             index === 0 ||
                             index === 1 ||
                             index === 2 ||
+                            index === 3 ||
                             index === images.length - 1 ||
-                            index === images.length - 2
+                            index === images.length - 2 ||
+                            index === images.length - 3
                                 ? 'eager'
                                 : 'lazy'
                         "
