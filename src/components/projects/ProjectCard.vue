@@ -37,7 +37,8 @@
 
         .project-title,
         .project-description {
-            text-align: center;
+            text-align: justify;
+            text-align-last: center;
             transition: all 5ms ease-in-out;
             opacity: 0;
         }
@@ -60,10 +61,6 @@
             object-fit: fill;
             transition: all 150ms ease-in-out;
             user-select: none;
-
-            &[lazy="loading"] {
-                width: 550px;
-            }
         }
 
         &:hover {
@@ -87,7 +84,7 @@
         user-select: none;
         opacity: 0;
         height: 100%;
-        padding: 15px;
+        padding: 30px;
         position: absolute;
         bottom: 0;
         left: 0;
