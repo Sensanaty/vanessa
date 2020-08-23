@@ -36,9 +36,15 @@
         </nav>
 
         <div class="middle">
-            <span class="legal"><router-link to="/legal">Legal</router-link></span> | <span aria-hidden="true">©</span>
-            <span class="name-text">Vanessa Sölter</span> |
-            <span class="acknowledgments"><router-link to="/reckognitions">Recognitions</router-link></span>
+            <span class="item legal">
+                <router-link class="misc-link" to="/legal">Legal</router-link>
+            </span>
+
+            <span class="item name-text"><span class="copyright" aria-hidden="true">©</span>Vanessa Sölter </span>
+
+            <span class="item recognitions">
+                <router-link class="misc-link" to="/recognitions">Recognitions</router-link>
+            </span>
         </div>
 
         <div class="plug">
@@ -72,32 +78,56 @@
         min-height: 80px;
         max-height: 80px;
         width: 100%;
-        display: flex;
+        display: grid;
+        grid-template: 1fr / 1fr 1fr 1fr;
         position: sticky;
         top: 0;
         left: 0;
-        flex-flow: row nowrap;
-        justify-content: space-between;
         align-items: center;
         background: $color-secondary;
         color: $off-white;
-        font-weight: bold;
-        flex: 0;
+
+        a {
+            display: inline-block;
+            color: $off-white;
+            text-decoration: none;
+            transition: all 150ms ease-in-out;
+
+            &:hover {
+                color: $highlight-main;
+            }
+        }
 
         nav {
+            justify-self: flex-start;
             height: 100%;
             display: flex;
-            flex-flow: row nowrap;
-            justify-content: center;
             align-items: center;
         }
 
-        .copyright {
-            font-size: 2rem;
-            user-select: none;
+        .middle {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            margin: 0 auto;
+            font-size: 1.3rem;
 
             .name-text {
-                user-select: all;
+                &:before,
+                &:after {
+                    content: "•";
+                    margin: 0 15px;
+                }
+
+                .copyright {
+                    margin-right: 5px;
+                }
+            }
+
+            .misc-link {
+                background: $color-secondary !important;
+                box-shadow: none !important;
+                color: $off-white !important;
             }
         }
 
@@ -105,22 +135,10 @@
             justify-self: flex-end;
             margin-right: 40px;
             user-select: none;
+            font-size: 1.2rem;
 
             span {
                 color: red;
-            }
-
-            a {
-                display: inline-block;
-                user-select: all;
-                color: $off-white;
-                text-decoration: none;
-                transition: all 150ms ease-in-out;
-
-                &:hover {
-                    transform: skew(-10deg) translate(1px);
-                    color: $highlight-main;
-                }
             }
         }
     }
