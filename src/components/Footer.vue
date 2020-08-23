@@ -49,7 +49,7 @@
 
         <div class="plug">
             Made with <span aria-label="Heart Emoticon">&lt;3</span> by
-            <a href="https://github.com/Sensanaty" aria-label="Sensanaty, Web Developer">Sensanaty</a>
+            <a href="https://github.com/Sensanaty" aria-label="Sensanaty, Web Developer" target="_blank">Sensanaty</a>
         </div>
     </footer>
 </template>
@@ -125,9 +125,17 @@
             }
 
             .misc-link {
-                background: $color-secondary !important;
-                box-shadow: none !important;
-                color: $off-white !important;
+                &.router-link-exact-active {
+                    background: $color-secondary;
+                    box-shadow: none;
+                    color: $off-white;
+                    text-decoration: underline $off-white;
+
+                    &:hover {
+                        text-decoration: underline $highlight-main;
+                        color: $highlight-main;
+                    }
+                }
             }
         }
 
