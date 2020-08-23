@@ -1,6 +1,6 @@
 <template>
     <div class="content-wrapper legal-wrapper">
-        <div class="intro">
+        <section aria-label="Introductory Section of the Legal Notice" class="intro">
             <h1>Legal Terms</h1>
             <p>
                 This legal page outlines the rules and regulations for the use, view, or display of this website,
@@ -35,9 +35,9 @@
                 Any use of the above terminology or other words in the singular, plural, capitalization and/or he/she or
                 they, are taken as interchangeable and therefore as referring to same.
             </p>
-        </div>
+        </section>
 
-        <div class="t-and-c">
+        <section aria-label="Terms and Conditions" class="t-and-c">
             <h1>Terms and Conditions</h1>
 
             <h2>License</h2>
@@ -167,9 +167,9 @@
                 We will consider requests to remove content and links but we are not obligated to do so or to respond to
                 you directly, especially if the content belongs to us as our intellectual property.
             </p>
-        </div>
+        </section>
 
-        <div class="privacy-policy">
+        <section aria-label="Privacy Policy" class="privacy-policy">
             <h1>Privacy Policy</h1>
             <p>
                 We are committed to providing you with the best possible service experience. We are bound by the Privacy
@@ -199,9 +199,9 @@
                 We take strict reasonable steps to ensure that these organisations are bound by confidentiality and
                 privacy obligations in relation to the protection of your personal information.
             </p>
-        </div>
+        </section>
 
-        <div class="disclaimer-notice">
+        <section aria-label="Disclaimer Notice" class="disclaimer-notice">
             <h1>Disclaimer Notice</h1>
             <p>
                 All the information on our website is published in good faith and for general information purpose only.
@@ -227,7 +227,7 @@
                 Be aware that when you leave our website, other sites may have different privacy policies and terms
                 which are beyond our control.
             </p>
-        </div>
+        </section>
     </div>
 </template>
 
@@ -251,7 +251,7 @@
         background: $color-secondary;
         padding: 20px;
 
-        div {
+        section {
             display: flex;
             flex-flow: column nowrap;
             padding: 10px;
