@@ -22,17 +22,20 @@
                 const pagePath = this.$route.path;
 
                 if (name === "Projects" || pagePath.includes("projects/")) {
-                    wrapper.classList.remove("gallery", "about", "contact");
+                    wrapper.classList.remove("gallery", "about", "contact", "misc");
                     wrapper.classList.add("projects");
                 } else if (name === "Gallery" || pagePath.includes("gallery/")) {
-                    wrapper.classList.remove("project", "about", "contact");
+                    wrapper.classList.remove("project", "about", "contact", "misc");
                     wrapper.classList.add("gallery");
                 } else if (name === "About" || pagePath.includes("about/")) {
-                    wrapper.classList.remove("gallery", "projects", "contact");
+                    wrapper.classList.remove("gallery", "projects", "contact", "misc");
                     wrapper.classList.add("about");
                 } else if (name === "Contact" || pagePath.includes("contact/")) {
-                    wrapper.classList.remove("gallery", "projects", "about");
+                    wrapper.classList.remove("gallery", "projects", "about", "misc");
                     wrapper.classList.add("contact");
+                } else {
+                    wrapper.classList.remove("gallery", "projects", "about", "contact");
+                    wrapper.classList.add("misc");
                 }
             }
         },
@@ -94,6 +97,10 @@
 
         &.contact {
             background: $highlight-contact;
+        }
+
+        &.misc {
+            background: $highlight-misc;
         }
 
         a {
