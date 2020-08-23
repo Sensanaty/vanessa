@@ -72,7 +72,7 @@ const router = new VueRouter({
     base: process.env.BASE_URL,
     routes,
     scrollBehavior() {
-        document.getElementById('app').scrollIntoView();
+        document.getElementById("app").scrollIntoView();
         return null;
     }
 });
