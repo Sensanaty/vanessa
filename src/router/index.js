@@ -9,7 +9,6 @@ const ProjectPage = () => import(/* webpackChunkName: "project-page" */ "@/views
 const GalleryPage = () => import("@/views/Gallery/GalleryPage.vue");
 const FourOhFour = () => import(/* webpackChunkName: "404" */ "@/views/FourOhFour.vue");
 const Legal = () => import(/* webpackChunkName: "legal" */ "@/views/Legal.vue");
-const Recognitions = () => import(/* webpackChunkName: "recognitions" */ "@/views/Recognitions.vue");
 
 Vue.use(VueRouter);
 
@@ -50,11 +49,6 @@ const routes = [
         path: "/contact",
         name: "Contact",
         component: Contact
-    },
-    {
-        path: "/recognitions",
-        name: "Recognitions",
-        component: Recognitions
     },
     {
         path: "/legal",

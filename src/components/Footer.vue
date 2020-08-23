@@ -40,11 +40,7 @@
                 <router-link class="misc-link" to="/legal">Legal</router-link>
             </span>
 
-            <span class="item name-text"><span class="copyright" aria-hidden="true">©</span>Vanessa Sölter </span>
-
-            <span class="item recognitions">
-                <router-link class="misc-link" to="/recognitions">Recognitions</router-link>
-            </span>
+            <span class="item name-text"><span class="copyright">© 2020</span>Vanessa Sölter </span>
         </div>
 
         <div class="plug">
@@ -113,8 +109,7 @@
             font-size: 1.3rem;
 
             .name-text {
-                &:before,
-                &:after {
+                &:before {
                     content: "•";
                     margin: 0 15px;
                 }
