@@ -242,6 +242,7 @@
 
 <style lang="scss">
     .legal-wrapper {
+        box-sizing: content-box;
         display: flex;
         flex-flow: column wrap;
         justify-content: center;
