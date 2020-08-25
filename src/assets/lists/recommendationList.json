@@ -1,0 +1,51 @@
+[
+  {
+    "id": "nyein",
+    "texts": [
+      "Vanessa is a passionate and dedicated student whose hard work combined with talent will no doubt take her even further.",
+      "Vanessa's interest in the design practice is noticeably present. She makes a conscious effort at learning more each day and her pursuit to employ design thinking at the highest level is apparent.",
+      "Also worth noting is her concern for the wellbeing of others and her commitment towards using design to improve upon adverse conditions in society.",
+      "It was my privilege to have had Vanessa as a student. I am confident in recommending her and her expertise."
+    ],
+    "recommender": {
+      "name": "Dr. Nyein Aung Chan",
+      "link": "https://nyeinaung.com/",
+      "position": "Chief Examiner and Lecturer at Monash University"
+    }
+  },
+  {
+    "id": "kanvar",
+    "texts": [
+      "It was an absolute pleasure to meet and work with Vanessa. Vanessa was eager to learn new things and very apt at researching key information from various sources. ",
+      "She approached design problems from various angles and responded with very creative solutions.",
+      "Apart from her excellent work ethic and passion for design, it is perhaps her respectful and animated personality that I will always remember."
+    ],
+    "recommender": {
+      "name": "Dr. Kanvar Neyer",
+      "link": "https://www.monash.edu/mada/research/research-projects/design-for-healthy-living/memorybox",
+      "position": "Industrial design Coordinator and Lecturer at Monash College"
+    }
+  },
+  {
+    "id": "jeffrey",
+    "texts": [
+      "Vanessa is really creative, and she really goes the extra mile to explain the process that she goes through. I’m looking forward to see what else she comes up with, and I hope to continue to work with her!"
+    ],
+    "recommender": {
+      "name": "Jeffrey Berthiaume",
+      "link": "https://www.linkedin.com/in/jeffreality/",
+      "position": "iOS Architect and Developer"
+    }
+  },
+  {
+    "id": "will",
+    "texts": [
+      "Vanessa is a hard-working creative. She is a great personality to have in a team offering a unique perspective."
+    ],
+    "recommender": {
+      "name": "Will Richards",
+      "link": "https://willrichardsdesigns.com/",
+      "position": "Industrial designer and fellow classmate at Monash University"
+    }
+  }
+]
