@@ -27,7 +27,7 @@
             placeholder="What do you want to get in touch about? (Required)"
             required
         ></textarea>
-        <button type="submit" @submit.prevent="handleSubmit">Send</button>
+        <button type="submit" @click.prevent="handleSubmit">Send</button>
     </form>
 </template>
 
