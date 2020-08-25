@@ -6,6 +6,7 @@
                 class="social-link"
                 aria-label="Vanessa's Behance Profile"
                 target="_blank"
+                rel="noopener"
             >
                 <BehanceIcon />
             </a>
@@ -14,6 +15,7 @@
                 class="social-link"
                 aria-label="Vanessa's Instagram Profile"
                 target="_blank"
+                rel="noopener"
             >
                 <InstagramIcon />
             </a>
@@ -22,6 +24,7 @@
                 class="social-link"
                 aria-label="Vanessa's LinkedIn Profile"
                 target="_blank"
+                rel="noopener"
             >
                 <LinkedinIcon />
             </a>
@@ -30,6 +33,7 @@
                 class="social-link"
                 aria-label="Vanessa's Facebook Profile"
                 target="_blank"
+                rel="noopener"
             >
                 <FacebookIcon />
             </a>
@@ -45,7 +49,9 @@
 
         <div class="plug">
             Made with <span aria-label="Heart Emoticon">&lt;3</span> by
-            <a href="https://github.com/Sensanaty" aria-label="Sensanaty, Web Developer" target="_blank">Sensanaty</a>
+            <a href="https://github.com/Sensanaty" aria-label="Sensanaty, Web Developer" target="_blank" rel="noopener">
+                Sensanaty
+            </a>
         </div>
     </footer>
 </template>

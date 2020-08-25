@@ -5,7 +5,7 @@
         <LinkButton url="/gallery" text="GALLERY" />
         <LinkButton url="/about" text="ABOUT" />
         <LinkButton url="/contact" text="CONTACT" />
-        <a href="https://vanessasoelter.youcanbook.me/" target="_blank" class="link-button">CONSULTS</a>
+        <a href="https://vanessasoelter.youcanbook.me/" target="_blank" class="link-button" rel="noopener">CONSULTS</a>
     </header>
 </template>
 
