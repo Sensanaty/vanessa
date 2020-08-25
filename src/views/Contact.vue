@@ -11,16 +11,30 @@
                 </p>
             </section>
         </div>
+
+        <div class="get-in-touch">
+            <h1>Had a project in mind you wanted to talk about?</h1>
+            <p>
+                Book a consult with me
+                <a href="https://vanessasoelter.youcanbook.me/" target="_blank" rel="noopener">here</a> or fill out the
+                form below!
+            </p>
+            <ContactForm />
+        </div>
     </div>
 </template>
 
 <script>
     import recommendations from "@/assets/lists/recommendationList.json";
+    import ContactForm from "@/components/ContactForm.vue";
 
     export default {
         name: "Contact",
         metaInfo: {
             title: "Vanessa | Contact"
+        },
+        components: {
+            ContactForm
         },
         data() {
             return {
@@ -32,7 +46,7 @@
 
 <style lang="scss">
     .contact-wrapper {
-        margin: 15px;
+        margin: 15px 25px;
     }
 
     .recommendations {
@@ -40,8 +54,7 @@
         flex-flow: column wrap;
 
         h1 {
-            font-size: 3rem;
-            text-align: center;
+            font-size: 2.3rem;
             margin-bottom: 20px;
         }
 
@@ -49,8 +62,8 @@
             box-sizing: content-box;
             background: $color-secondary;
             padding: 35px;
-            width: 75%;
-            margin: 15px auto;
+            width: 50%;
+            margin: 15px 0;
             border-top: 2px solid $highlight-contact;
 
             p {
@@ -73,6 +86,34 @@
                         color: $highlight-contact;
                         text-decoration: underline $highlight-contact;
                     }
+                }
+            }
+        }
+    }
+
+    .get-in-touch {
+        display: flex;
+        flex-flow: column nowrap;
+        box-sizing: content-box;
+        position: fixed;
+        right: 50px;
+        top: 21%;
+        margin: auto;
+        text-align: center;
+        user-select: none;
+
+        p {
+            font-size: 1.4rem;
+            margin-top: 15px;
+
+            a {
+                color: $off-white;
+                text-decoration: underline $off-white;
+                transition: all 150ms ease-in-out;
+
+                &:hover {
+                    color: $highlight-contact;
+                    text-decoration: underline $highlight-contact;
                 }
             }
         }

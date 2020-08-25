@@ -35,4 +35,8 @@
     .contact .link-button:hover {
         color: $highlight-contact;
     }
+
+    .misc .link-button:hover {
+        color: $highlight-misc;
+    }
 </style>
