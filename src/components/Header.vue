@@ -62,28 +62,6 @@
         background: $color-main;
         transition: background 350ms ease-in-out;
 
-        .logo {
-            color: $color-main;
-            margin-right: auto;
-            margin-left: 40px;
-            font-size: 3.1rem;
-            user-select: none;
-            border: none;
-            transition: all 150ms ease-in-out;
-            background: none !important;
-            box-shadow: none !important;
-
-            &:hover {
-                &:after {
-                    content: " ";
-                    height: 10px;
-                    width: 100%;
-                    border-bottom: 1px solid red;
-                    position: relative;
-                }
-            }
-        }
-
         &.projects {
             background: $highlight-main;
         }
@@ -109,9 +87,29 @@
         }
     }
 
-    .router-link-active {
-        background: $off-white;
+    .logo {
         color: $color-main;
+        margin-right: auto;
+        margin-left: 40px;
+        font-size: 3.1rem;
+        user-select: none;
+        border: none;
+        transition: all 150ms ease-in-out;
+        background: none !important;
+        box-shadow: none !important;
+
+        &:hover {
+            &:after {
+                content: " ";
+                height: 10px;
+                width: 100%;
+                border-bottom: 1px solid red;
+                position: relative;
+            }
+        }
+    }
+
+    .router-link-active {
         box-shadow: 0 0 4px 0 $off-white;
     }
 
@@ -119,5 +117,11 @@
         background: $off-white;
         color: $color-main;
         box-shadow: 0 0 4px 0 $off-white;
+    }
+
+    @media screen and (max-width: 790px) {
+        .logo {
+            font-size: 2.8rem;
+        }
     }
 </style>

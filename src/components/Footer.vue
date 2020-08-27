@@ -1,6 +1,6 @@
 <template>
-    <footer>
-        <nav aria-label="Footer Navigation Links">
+    <footer class="desktop">
+        <nav class="large-screen" aria-label="Footer Navigation Links">
             <a
                 href="https://www.behance.net/vasequise"
                 class="social-link"
@@ -39,7 +39,7 @@
             </a>
         </nav>
 
-        <div class="middle">
+        <div class="middle large-screen">
             <span class="item legal">
                 <router-link class="misc-link" to="/legal">Legal</router-link>
             </span>
@@ -73,8 +73,8 @@
     };
 </script>
 
-<style lang="scss">
-    footer {
+<style lang="scss" scoped>
+    footer.desktop {
         margin-top: auto;
         height: 80px;
         min-height: 80px;
@@ -106,49 +106,49 @@
             display: flex;
             align-items: center;
         }
+    }
 
-        .middle {
-            display: flex;
-            justify-content: space-evenly;
-            align-items: center;
-            margin: 0 auto;
-            font-size: 1.3rem;
+    .middle {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        margin: 0 auto;
+        font-size: 1.3rem;
 
-            .name-text {
-                &:before {
-                    content: "•";
-                    margin: 0 15px;
-                }
-
-                .copyright {
-                    margin-right: 5px;
-                }
+        .name-text {
+            &:before {
+                content: "•";
+                margin: 0 15px;
             }
 
-            .misc-link {
-                &.router-link-exact-active {
-                    background: $color-secondary;
-                    box-shadow: none;
-                    color: $off-white;
-                    text-decoration: underline $off-white;
-
-                    &:hover {
-                        text-decoration: underline $highlight-main;
-                        color: $highlight-main;
-                    }
-                }
+            .copyright {
+                margin-right: 5px;
             }
         }
 
-        .plug {
-            justify-self: flex-end;
-            margin-right: 40px;
-            user-select: none;
-            font-size: 1.2rem;
+        .misc-link {
+            &.router-link-exact-active {
+                background: $color-secondary;
+                box-shadow: none;
+                color: $off-white;
+                text-decoration: underline $off-white;
 
-            span {
-                color: red;
+                &:hover {
+                    text-decoration: underline $highlight-main;
+                    color: $highlight-main;
+                }
             }
+        }
+    }
+
+    .plug {
+        justify-self: flex-end;
+        margin-right: 40px;
+        user-select: none;
+        font-size: 1.2rem;
+
+        span {
+            color: red;
         }
     }
 
@@ -177,4 +177,6 @@
             }
         }
     }
+
+    @import "../styles/media-query/_footer";
 </style>

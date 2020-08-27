@@ -1,5 +1,5 @@
 <template>
-    <div class="home-wrapper">
+    <div class="content-wrapper home-wrapper">
         <div class="hero-text">
             <h1 class="title">PRODUCTS ARE FRIENDS</h1>
             <h2 class="subtitle">NOT TRASH</h2>
@@ -34,69 +34,71 @@
         align-items: center;
         display: flex;
         flex-flow: column nowrap;
+    }
 
-        .hero-text {
-            margin-top: 3%;
-            text-align: center;
+    .hero-navigation {
+        margin-top: 1%;
+        width: 100%;
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+        text-align: center;
+    }
 
-            .title {
-                font-size: 5.5rem;
-            }
+    .navlink {
+        padding: 1rem;
+        width: 100%;
+        text-decoration: none;
+        color: $color-main;
+        font-size: calc(20px + 1vmin);
+        margin: 20px 0;
+        box-shadow: 0 0 0 0 $color-main;
+        transition: all 150ms ease-in-out;
+        min-height: 65px;
+        user-select: none;
 
-            .subtitle {
-                font-size: 12rem;
+        &.projects {
+            background: $highlight-main;
+
+            &:hover {
+                box-shadow: 0 0 4px 0 opacify($highlight-main, 0.5);
             }
         }
+        &.gallery {
+            background: $highlight-gallery;
 
-        .hero-navigation {
-            margin-top: 1%;
-            width: 100%;
-            display: flex;
-            flex-flow: column nowrap;
-            align-items: center;
-            text-align: center;
+            &:hover {
+                box-shadow: 0 0 4px 0 opacify($highlight-gallery, 0.5);
+            }
+        }
+        &.about {
+            background: $highlight-about;
 
-            .navlink {
-                padding: 1rem;
-                width: 100%;
-                text-decoration: none;
-                color: $color-main;
-                font-size: calc(20px + 1vmin);
-                margin: 20px 0;
-                box-shadow: 0 0 0 0 $color-main;
-                transition: all 150ms ease-in-out;
-                min-height: 65px;
-                user-select: none;
+            &:hover {
+                box-shadow: 0 0 4px 0 opacify($highlight-about, 0.5);
+            }
+        }
+        &.contact {
+            background: $highlight-contact;
 
-                &.projects {
-                    background: $highlight-main;
-
-                    &:hover {
-                        box-shadow: 0 0 4px 0 opacify($highlight-main, 0.5);
-                    }
-                }
-                &.gallery {
-                    background: $highlight-gallery;
-
-                    &:hover {
-                        box-shadow: 0 0 4px 0 opacify($highlight-gallery, 0.5);
-                    }
-                }
-                &.about {
-                    background: $highlight-about;
-
-                    &:hover {
-                        box-shadow: 0 0 4px 0 opacify($highlight-about, 0.5);
-                    }
-                }
-                &.contact {
-                    background: $highlight-contact;
-
-                    &:hover {
-                        box-shadow: 0 0 4px 0 opacify($highlight-contact, 0.5);
-                    }
-                }
+            &:hover {
+                box-shadow: 0 0 4px 0 opacify($highlight-contact, 0.5);
             }
         }
     }
+
+    .hero-text {
+        margin-top: 3%;
+        text-align: center;
+
+        .title {
+            font-size: 5.5rem;
+        }
+
+        .subtitle {
+            font-size: 12rem;
+        }
+    }
+
+    @import "../styles/media-query/_home";
 </style>

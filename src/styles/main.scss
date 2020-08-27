@@ -29,3 +29,9 @@ h1, h2, h3, p {
     margin: 0;
     word-wrap: break-word;
 }
+
+@media screen and (max-width: 755px) {
+    .content-wrapper {
+        padding-bottom: 100px !important;
+    }
+}
