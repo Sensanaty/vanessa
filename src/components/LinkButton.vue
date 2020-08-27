@@ -39,4 +39,10 @@
     .misc .link-button:hover {
         color: $highlight-misc;
     }
+
+    @media screen and (max-width: 790px) {
+        .link-button {
+            font-size: 1.2rem;
+        }
+    }
 </style>

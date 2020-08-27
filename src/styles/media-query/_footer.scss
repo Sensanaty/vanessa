@@ -1,0 +1,24 @@
+@media screen and (max-width: 938px) {
+  .social-link {
+    height: 50%;
+  }
+
+  .social-link:nth-child(1) {
+    margin-left: 15px;
+  }
+
+  footer.desktop {
+    grid-template: 1fr / 0.8fr 0.5fr 1fr;
+    grid-template-areas: "social . copyright";
+  }
+
+  .middle {
+    grid-area: copyright;
+    justify-self: flex-end;
+    margin-right: 15px;
+  }
+
+  .plug {
+    display: none;
+  }
+}

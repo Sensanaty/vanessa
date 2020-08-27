@@ -1,22 +1,34 @@
 <template>
     <div id="app">
         <transition name="header">
-            <Header v-show="renderNav" />
+            <hide-at breakpoint="small">
+                <Header v-show="renderNav" :breakpoints="{ small: 756 }" />
+            </hide-at>
         </transition>
         <router-view />
-        <Footer />
+        <hide-at breakpoint="small" :breakpoints="{ small: 756 }">
+            <Footer />
+        </hide-at>
+        <show-at breakpoint="small" :breakpoints="{ small: 756 }">
+            <MobileFooter />
+        </show-at>
     </div>
 </template>
 
 <script>
     import Footer from "@/components/Footer";
+    import MobileFooter from "@/components/MobileFooter.vue";
     import Header from "@/components/Header";
+    import { showAt, hideAt } from "vue-breakpoints";
 
     export default {
         name: "App",
         components: {
             Footer,
-            Header
+            Header,
+            MobileFooter,
+            showAt,
+            hideAt
         },
         computed: {
             renderNav() {
@@ -43,5 +55,11 @@
     .header-leave,
     .header-leave-to {
         display: none;
+    }
+
+    @media screen and (max-width: 755px) {
+        .header-wrapper {
+            display: none !important;
+        }
     }
 </style>
