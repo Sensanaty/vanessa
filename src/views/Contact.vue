@@ -14,11 +14,6 @@
 
         <div class="get-in-touch">
             <h1>Had a project in mind you wanted to talk about?</h1>
-            <p>
-                Book a consult with me
-                <a href="https://vanessasoelter.youcanbook.me/" target="_blank" rel="noopener">here</a> or fill out the
-                form below!
-            </p>
             <ContactForm />
         </div>
     </div>
@@ -97,7 +92,7 @@
         box-sizing: content-box;
         position: fixed;
         right: 50px;
-        top: 21%;
+        top: 17%;
         margin: auto;
         text-align: center;
         user-select: none;
