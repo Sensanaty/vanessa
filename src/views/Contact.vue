@@ -113,4 +113,6 @@
             }
         }
     }
+
+    @import "../styles/media-query/_contact";
 </style>
