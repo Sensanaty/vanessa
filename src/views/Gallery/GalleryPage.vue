@@ -10,30 +10,49 @@
             </router-link>
         </div>
 
-        <Flickity ref="flickity" class="carousel" :options="flickityOptions" autofocus>
-            <div class="carousel-cell" v-for="(image, index) in images" :key="index">
-                <picture>
-                    <source :srcset="`/images/gallery/${currentRoute}/${image}.webp`" type="image/webp" />
-                    <source :srcset="`/images/gallery/${currentRoute}/${image}.jpg`" type="image/jpeg" />
-                    <img
-                        :alt="altTexts[index]"
-                        class="carousel-image"
-                        :src="`/images/gallery/${currentRoute}/${image}.jpg`"
-                        :loading="
-                            index === 0 ||
-                            index === 1 ||
-                            index === 2 ||
-                            index === 3 ||
-                            index === images.length - 1 ||
-                            index === images.length - 2 ||
-                            index === images.length - 3
-                                ? 'eager'
-                                : 'lazy'
-                        "
-                    />
-                </picture>
+        <hide-at breakpoint="mediumAndBelow" :breakpoints="{ medium: 901 }">
+            <Flickity ref="flickity" class="carousel" :options="flickityOptions" autofocus>
+                <div class="carousel-cell" v-for="(image, index) in images" :key="index">
+                    <picture>
+                        <source :srcset="`/images/gallery/${currentRoute}/${image}.webp`" type="image/webp" />
+                        <source :srcset="`/images/gallery/${currentRoute}/${image}.jpg`" type="image/jpeg" />
+                        <img
+                            :alt="altTexts[index]"
+                            class="carousel-image"
+                            :src="`/images/gallery/${currentRoute}/${image}.jpg`"
+                            :loading="
+                                index === 0 ||
+                                index === 1 ||
+                                index === 2 ||
+                                index === 3 ||
+                                index === images.length - 1 ||
+                                index === images.length - 2 ||
+                                index === images.length - 3
+                                    ? 'eager'
+                                    : 'lazy'
+                            "
+                        />
+                    </picture>
+                </div>
+            </Flickity>
+        </hide-at>
+
+        <show-at breakpoint="mediumAndBelow" :breakpoints="{ medium: 901 }">
+            <div class="gallery-grid-wrapper">
+                <div class="image-wrapper" v-for="(image, index) in images" :key="index">
+                    <picture>
+                        <source :srcset="`/images/gallery/${currentRoute}/${image}.webp`" type="image/webp" />
+                        <source :srcset="`/images/gallery/${currentRoute}/${image}.jpg`" type="image/jpeg" />
+                        <img
+                            class="grid-image"
+                            :src="`/images/gallery/${currentRoute}/${image}.jpg`"
+                            :alt="altTexts[index]"
+                            loading="lazy"
+                        />
+                    </picture>
+                </div>
             </div>
-        </Flickity>
+        </show-at>
     </div>
 </template>
 
@@ -41,6 +60,7 @@
     import Flickity from "vue-flickity";
     import ImageList from "@/assets/lists/galleryList.json";
     import ProjectList from "@/assets/lists/projectList.json";
+    import { showAt, hideAt } from "vue-breakpoints";
 
     export default {
         name: "GalleryPage",
@@ -50,7 +70,9 @@
             };
         },
         components: {
-            Flickity
+            Flickity,
+            showAt,
+            hideAt
         },
         data() {
             return {
@@ -146,7 +168,7 @@
     }
 
     .carousel {
-        margin: 3%;
+        margin: 5% 0 2% 0;
     }
 
     .carousel-cell {
@@ -155,11 +177,37 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        padding: 0 40px;
 
         .carousel-image {
             width: 100%;
             height: 100%;
-            background: #272727;
         }
     }
+
+    .gallery-grid-wrapper {
+        box-sizing: content-box;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-items: center;
+        width: 70%;
+        height: 100%;
+        margin: 0 auto;
+    }
+
+    .image-wrapper {
+        margin: 10px 0;
+        &:nth-child(1) {
+            margin: 50px 0 10px 0;
+        }
+    }
+
+    .grid-image {
+        height: auto;
+        width: 100%;
+        margin: 20px 0;
+    }
+
+    @import "../../styles/media-query/_galleryPage";
 </style>
