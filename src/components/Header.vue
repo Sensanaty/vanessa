@@ -109,10 +109,6 @@
         }
     }
 
-    .router-link-active {
-        box-shadow: 0 0 4px 0 $off-white;
-    }
-
     .router-link-exact-active {
         background: $off-white;
         color: $color-main;

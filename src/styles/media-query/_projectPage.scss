@@ -1,0 +1,174 @@
+@media screen and (max-width: 1430px) {
+  .project-hero-wrapper .hero-description {
+    font-size: 3.9rem;
+  }
+
+  .project-hero-wrapper .hero-title {
+    font-size: 6rem;
+    margin: 15px 0;
+  }
+
+  .project-detail-wrapper .detail {
+    font-size: 1.4rem;
+  }
+}
+
+@media screen and (max-width: 1295px) {
+  .project-detail-wrapper {
+    margin: 10px auto;
+  }
+}
+
+@media screen and (max-width: 1120px) {
+  .project-hero-wrapper .hero-title {
+    font-size: 6rem;
+    margin: 10px 0 5px 0;
+  }
+
+  .project-hero-wrapper .hero-description {
+    margin: 0 0 2px 0;
+  }
+}
+
+@media screen and (max-width: 980px) {
+  .project-hero-wrapper {
+    .hero-title {
+      font-size: 5rem;
+    }
+
+    .hero-description {
+      font-size: 3rem;
+    }
+  }
+}
+
+
+@media screen and (max-width: 872px) {
+  .link {
+    font-size: 1.3rem;
+  }
+}
+
+@media screen and (max-width: 755px) {
+  .project-hero-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+
+    .hero-title,
+    .hero-description {
+      text-align: center;
+    }
+
+    .hero-title {
+      margin-top: 25px;
+    }
+  }
+
+  .link-wrapper {
+    width: 100%;
+  }
+
+  .link{
+    .back-link {
+      margin: 0 0 0 20px;
+    }
+
+    .gallery-link {
+      margin: 0 20px 0 0;
+    }
+  }
+}
+
+@media screen and (max-width: 664px) {
+  .project-hero-wrapper {
+    .hero-description {
+      font-size: 2.3rem;
+    }
+  }
+}
+
+@media screen and (max-width: 510px) {
+  .project-hero-wrapper {
+    .hero-description {
+      font-size: 2rem;
+    }
+  }
+}
+
+@media screen and (max-width: 451px) {
+  .project-hero-wrapper {
+    .hero-title {
+      font-size: 4rem
+    }
+
+    .hero-description {
+      font-size: 1.7rem;
+    }
+  }
+
+  .link {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .project-hero-wrapper {
+    .hero-title {
+      font-size: 3.7rem
+    }
+
+    .hero-description {
+      font-size: 1.5rem;
+    }
+  }
+
+  .project-detail-wrapper .detail {
+    word-break: break-word;
+    font-size: 1.35rem;
+    word-spacing: -2px;
+  }
+
+  .link {
+    &.back-link {
+      margin: 0 0 0 15px;
+    }
+
+    &.gallery-link {
+      margin: 0 15px 0 0;
+    }
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .project-hero-wrapper {
+    .hero-title {
+      font-size: 3rem;
+      margin-top: 50px;
+    }
+
+    .hero-description {
+      font-size: 1.3rem;
+    }
+  }
+
+  .link.gallery-link {
+    margin: 0 auto;
+  }
+
+  .project-detail-wrapper .detail {
+    font-size: 1.25rem;
+    text-align: left;
+  }
+
+  .link {
+    span {
+      display: none;
+    }
+
+    &.gallery-link {
+      margin: 0 0 0 20px;
+    }
+  }
+}

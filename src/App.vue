@@ -1,8 +1,8 @@
 <template>
     <div id="app">
         <transition name="header">
-            <hide-at breakpoint="small">
-                <Header v-show="renderNav" :breakpoints="{ small: 756 }" />
+            <hide-at breakpoint="small" :breakpoints="{ small: 756 }">
+                <Header v-show="renderNav" />
             </hide-at>
         </transition>
         <router-view />

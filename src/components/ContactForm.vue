@@ -64,7 +64,6 @@
                 const messageField = document.querySelector("#message-form");
 
                 if (this.form.name && this.form.email && emailRegex.test(this.form.email) && this.form.message) {
-
                     emailField.style.outline = "0 solid #272727";
                     messageField.style.outline = "0 solid #272727";
                     return true;

@@ -1,5 +1,5 @@
 <template>
-    <div class="project-page-wrapper" v-if="project">
+    <div class="content-wrapper project-page-wrapper" v-if="project">
         <div class="link-wrapper">
             <router-link to="/projects" class="back-link link" exact>
                 <span aria-hidden="true">←</span>Back to Projects
@@ -51,6 +51,10 @@
 </script>
 
 <style lang="scss" scoped>
+    .content-wrapper {
+        padding-top: 0;
+    }
+
     .link-wrapper {
         display: flex;
         justify-content: space-between;
@@ -135,4 +139,6 @@
             font-family: "Aeonik Medium", sans-serif;
         }
     }
+
+    @import "../../styles/media-query/_projectPage";
 </style>

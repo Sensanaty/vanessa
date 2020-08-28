@@ -1,5 +1,6 @@
 <template>
     <router-link class="project-link" :to="{ name: 'ProjectPage', params: { id: url } }" exact>
+        <h1 class="mobile-header">{{ title.toUpperCase() }}</h1>
         <div class="project-card">
             <picture>
                 <source :srcset="imagePaths.webp" type="image/webp" />
@@ -7,7 +8,7 @@
                 <img :src="imagePaths.jpg" :alt="altText" class="project-image" />
             </picture>
             <div class="text-wrapper">
-                <h1 class="project-title">{{ title.toUpperCase() }}</h1>
+                <h1 class="project-title">{{ title }}</h1>
                 <p class="project-description">{{ description }}</p>
             </div>
         </div>
@@ -74,6 +75,16 @@
                 opacity: 1;
             }
         }
+    }
+
+    .project-link {
+        text-decoration: none !important;
+    }
+
+    .mobile-header {
+        text-decoration: none;
+        text-align: center;
+        display: none;
     }
 
     .text-wrapper {
