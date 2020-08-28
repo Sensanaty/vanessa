@@ -264,4 +264,6 @@
             font-size: 1.4rem;
         }
     }
+
+    @import "../styles/media-query/_about";
 </style>

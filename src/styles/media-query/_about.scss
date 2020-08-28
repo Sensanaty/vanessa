@@ -1,0 +1,91 @@
+@media screen and (max-width: 1350px) {
+  .about-wrapper .image-section-wrapper {
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .about-wrapper .image-section-wrapper {
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 915px) {
+  .about-wrapper .image-section-wrapper {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 755px) {
+  .about-wrapper  {
+    width: 85%;
+    justify-content: center;
+
+    .image-section-wrapper h2 {
+      font-size: 1.7rem;
+    }
+
+    section {
+      width: auto;
+    }
+
+    .education {
+      display: flex;
+      flex-flow: column wrap;
+
+      .title {
+        font-size: 2.5rem;
+      }
+
+      h2 {
+        text-align: center;
+        margin: 20px 0;
+      }
+    }
+  }
+
+  .ib-diploma {
+    border-bottom: 2px solid $highlight-about;
+    padding-bottom: 20px !important;
+  }
+
+  .monash-college {
+    border-bottom: 2px solid $highlight-about;
+    padding-bottom: 20px !important;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .about-wrapper {
+    .image-section-wrapper {
+      width: 90%;
+    }
+
+    .image-section-wrapper h2 {
+      font-size: 1.5rem;
+    }
+  }
+}
+
+@media screen and (max-width: 465px) {
+  .about-wrapper {
+    width: 100%;
+    margin: 30px auto;
+
+    .image-section-wrapper {
+      flex-flow: column wrap;
+      padding: 25px 0;
+
+      h2 {
+        text-align: center;
+        margin: 0;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .about-wrapper section h1 {
+    font-size: 2.6rem;
+  }
+}
