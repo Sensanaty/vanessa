@@ -40,4 +40,6 @@
         align-items: center;
         flex-flow: row wrap;
     }
+
+    @import "../../styles/media-query/_projects";
 </style>

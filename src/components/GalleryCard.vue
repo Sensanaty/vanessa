@@ -1,5 +1,11 @@
 <template>
-    <router-link class="gallery-link" :to="{ name: 'GalleryPage', params: { id: url } }" exact>
+    <router-link
+        class="gallery-link"
+        style="text-decoration: none"
+        :to="{ name: 'GalleryPage', params: { id: url } }"
+        exact
+    >
+        <h1 class="mobile-header">{{ title }}</h1>
         <div class="gallery-card">
             <picture>
                 <source :srcset="`${image}.webp`" type="image/webp" />
@@ -26,7 +32,7 @@
     };
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
     .gallery-card {
         height: 650px;
         width: 650px;
@@ -74,5 +80,9 @@
                 opacity: 1;
             }
         }
+    }
+
+    .mobile-header {
+        display: none;
     }
 </style>
