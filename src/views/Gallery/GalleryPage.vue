@@ -1,5 +1,5 @@
 <template>
-    <div class="gallery-page-wrapper">
+    <div class="content-wrapper gallery-page-wrapper">
         <div class="link-wrapper">
             <router-link to="/gallery" class="back-link link" exact>
                 <span aria-hidden="true">←</span>Back to Gallery
