@@ -1,10 +1,8 @@
 <template>
     <section class="recommendation">
-        <p v-for="(text, index) in texts" :key="index">{{ text }}</p>
-        <p class="recommender">
-            <a :href="recommender.link" target="_blank" rel="noopener">{{ recommender.name }}</a>
-            , {{ recommender.position }}
-        </p>
+        <p v-for="(text, index) in texts" class="words" :key="index">{{ text }}</p>
+        <a :href="recommender.link" class="reference-link" target="_blank" rel="noopener">{{ recommender.name }}</a>
+        <p class="recommender">{{ recommender.position }}</p>
     </section>
 </template>
 
@@ -20,34 +18,24 @@
 
 <style lang="scss">
     .recommendation {
-        box-sizing: content-box;
-        background: $color-secondary;
-        padding: 35px;
-        width: 50%;
-        margin: 15px 0;
-        border-top: 2px solid $highlight-contact;
+        display: flex;
+        flex-flow: column wrap;
+        box-sizing: border-box;
+        margin: 10px;
+        font-size: 1.4rem;
 
-        p {
-            font-size: 1.5rem;
-            font-family: "Aeonik Medium", sans-serif;
-            line-height: 1.2;
+        .words {
             margin: 10px 0;
+            font-family: "Aeonik Medium", sans-serif;
         }
 
-        .recommender {
-            font-size: 1.7rem;
-            margin-top: 30px;
-
-            a {
-                color: $off-white;
-                text-decoration: underline $off-white;
-                transition: all 150ms ease-in-out;
-
-                &:hover {
-                    color: $highlight-contact;
-                    text-decoration: underline $highlight-contact;
-                }
-            }
+        .reference-link {
+            color: $off-white;
+            text-decoration: underline $off-white;
+            font-size: 1.8rem;
+            margin: 30px 0 7px;
+            align-self: flex-start;
+            transition: all 100ms ease-in-out;
         }
     }
 </style>

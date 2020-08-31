@@ -18,7 +18,7 @@
             <p>An outspoken LGBTQIA+ ally and a mental health advocate.</p>
         </section>
 
-        <section>
+        <section class="question">
             <h1>"What grinds your gears?"</h1>
             <p>Maths excite me. Physics get me going, and don't even get me started with Chemistry.</p>
             <p>I won't stop talking about the IUPAC naming rules of different carbon categories.</p>
@@ -30,7 +30,7 @@
             </p>
         </section>
 
-        <section>
+        <section class="question">
             <h1>"How did you get into design?"</h1>
             <p>
                 It all started with that one computer my Great Aunt, Elizabeth, had in her living room. It was one of
@@ -65,13 +65,25 @@
             </p>
         </section>
 
+        <div class="recommendations">
+            <h1>Some kind words from the people I've worked with in the past</h1>
+            <div class="recommendation-wrapper">
+                <ComplimentCard
+                    v-for="recommendation in recommendations"
+                    :key="recommendation.id"
+                    :texts="recommendation.texts"
+                    :recommender="recommendation.recommender"
+                />
+            </div>
+        </div>
+
         <section class="education">
-            <h1 class="title">Educational Background</h1>
+            <h1 class="education-title">Educational Background</h1>
             <h2>
                 IB Diploma
                 <pre aria-hidden="true" class="graduation-date">2013 - 2015</pre>
             </h2>
-            <section class="ib-diploma">
+            <section class="qual-detail ib-diploma">
                 <p>Attended the Bali International School, taking classes in</p>
                 <ul>
                     <li>Higher Level English</li>
@@ -93,13 +105,13 @@
                 Diploma of Art and Design
                 <pre aria-hidden="true" class="graduation-date">2016 - 2017</pre>
             </h2>
-            <p class="monash-college">Attended Monash College, Melbourne. Specializing in 3D design.</p>
+            <p class="qual-detail monash-college">Attended Monash College, Melbourne. Specializing in 3D design.</p>
 
             <h2>
                 Bachelor of Industrial Design
                 <pre aria-hidden="true" class="graduation-date">2018-2021</pre>
             </h2>
-            <section class="monash-uni">
+            <section class="qual-detail monash-uni">
                 <p>Attending Monash University, Melbourne. Taking these electives:</p>
                 <ul>
                     <li>Introductory Astronomy</li>
@@ -118,143 +130,156 @@
 </template>
 
 <script>
+    import recommendations from "@/assets/lists/recommendationList.json";
+    import ComplimentCard from "@/components/ComplimentCard";
+
     export default {
         name: "About",
         metaInfo: {
             title: "Vanessa | About"
+        },
+        components: {
+            ComplimentCard
+        },
+        data() {
+            return {
+                recommendations: recommendations
+            };
         }
     };
 </script>
 
 <style lang="scss">
     .about-wrapper {
-        box-sizing: content-box;
         display: flex;
         flex-flow: column wrap;
-        justify-content: center;
         align-items: center;
-        margin: 30px auto;
+        justify-content: center;
+        color: $off-white;
         width: 75%;
-
-        ul li {
-            color: $off-white;
-        }
-
-        .image-section-wrapper {
-            display: flex;
-            flex-flow: row nowrap;
-            box-sizing: content-box;
-            justify-items: center;
-            align-items: center;
-            color: $off-white;
-            width: 50%;
-            padding: 25px;
-            margin: 0 auto 10px auto;
-            font-size: 1.2rem;
-
-            img {
-                width: 100%;
-                height: auto;
-                margin-bottom: 10px;
-                pointer-events: none;
-                user-select: none;
-                flex: 2 1 auto;
-                box-shadow: 0 0 10px 0 black;
-            }
-
-            h2 {
-                font-size: 1.9rem;
-                flex: 1 1 auto;
-                margin-left: 30px;
-                text-align: left;
-            }
-        }
-
-        .recognition {
-            border-top: 2px solid $highlight-about;
-            border-bottom: 2px solid $highlight-about;
-            text-align: center;
-
-            p {
-                font-family: "Aeonik Bold", sans-serif;
-            }
-        }
+        margin: 0 auto;
 
         section {
-            box-sizing: content-box;
-            font-size: 1.4rem;
-            background: $color-secondary;
-            width: 100%;
-            margin: 15px 0;
             padding: 25px;
+            background: $color-secondary;
+            margin: 20px auto;
+            width: 100%;
+        }
+    }
 
-            h1 {
-                font-size: 4rem;
-                margin: 15px 0;
+    .image-section-wrapper {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-items: center;
+        align-items: center;
+        width: 50%;
+        margin: 0 auto 30px auto;
+        padding: 25px;
 
-                &:before {
-                    content: "Q: ";
-                }
-            }
+        img {
+            width: 100%;
+            height: auto;
+            pointer-events: none;
+            user-select: none;
+            box-shadow: 0 0 5px 1px black;
+        }
 
-            .born-in {
-                font-size: 1.8rem;
-            }
+        h2 {
+            font-size: 2rem;
+            margin-left: 25px;
+        }
+    }
 
-            .bigger {
-                font-size: 1.6rem;
-                margin: 20px 0;
+    .recognition {
+        font-size: 1.5rem;
+        text-align: center;
+        border-top: 2px solid $highlight-about;
+        border-bottom: 2px solid $highlight-about;
 
-                strong {
-                    font-size: 1.6rem;
-                }
+        p {
+            margin: 15px 0;
+        }
+    }
+
+    .question {
+        h1 {
+            font-size: 4rem;
+            margin-bottom: 20px;
+
+            &:before {
+                content: "Q: ";
             }
         }
 
         p {
-            margin: 10px 0;
+            font-size: 1.3rem;
             font-family: "Aeonik Medium", sans-serif;
+            margin: 15px 0;
+
+            &.bigger {
+                font-size: 1.5rem;
+            }
+        }
+    }
+
+    .recommendations {
+        h1 {
+            text-align: center;
+            margin: 20px auto;
+            font-size: 3rem;
         }
 
-        .education {
-            box-sizing: content-box;
-            padding: 40px;
-            display: grid;
-            grid-template: 1fr 2fr 1fr 2fr / 1fr 1fr;
-            grid-template-areas:
-                "title title"
-                ". ."
-                ". ."
-                ". .";
+        .recommendation-wrapper {
+            display: flex;
+            justify-content: space-between;
+            flex-flow: row wrap;
+            margin-bottom: 30px;
+        }
 
-            section {
-                background: none;
-                margin: 0;
-                padding: 0;
-            }
+        .recommendation {
+            border-left: 5px solid $highlight-about;
+        }
 
-            .title {
-                grid-area: title;
-                text-align: center;
+        .reference-link:hover {
+            color: $highlight-about;
+            text-decoration: underline $highlight-about;
+        }
+    }
 
-                &:before {
-                    content: none;
-                }
-            }
+    .education-title {
+        font-size: 4rem;
+    }
 
-            p {
-                font-size: 1.4rem;
-            }
+    .education {
+        box-sizing: content-box;
+        display: grid;
+        grid-template: 1fr 2fr 1fr 2fr / 1fr 1fr;
+        grid-template-areas: "title title" ". ." ". .";
 
-            a {
-                text-decoration: underline $off-white;
-                color: $off-white;
-                transition: all 100ms ease-in-out;
+        .education-title {
+            grid-area: title;
+            justify-self: center;
+        }
 
-                &:hover {
-                    text-decoration: underline $highlight-about;
-                    color: $highlight-about;
-                }
+        section {
+            background: none;
+            margin: 0px 0 30px 0;
+            padding: 0;
+        }
+
+        p {
+            font-family: "Aeonik Medium", sans-serif;
+            font-size: 1.4rem;
+        }
+
+        a {
+            text-decoration: underline $off-white;
+            color: $off-white;
+            transition: all 100ms ease-in-out;
+
+            &:hover {
+                text-decoration: underline $highlight-about;
+                color: $highlight-about;
             }
         }
 
@@ -262,6 +287,17 @@
             margin: 5px 0;
             padding: 0;
             font-size: 1.4rem;
+        }
+
+        h2 {
+            font-size: 1.9rem;
+            margin-left: 30px;
+            text-align: left;
+        }
+
+        ul li {
+            font-size: 1.4rem;
+            font-family: "Aeonik Medium", sans-serif;
         }
     }
 
