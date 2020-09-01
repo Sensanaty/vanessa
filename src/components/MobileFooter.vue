@@ -1,7 +1,7 @@
 <template>
     <footer class="mobile">
-        <router-link to="/projects" class="footer-link" id="project" exact>PROJECT</router-link>
-        <router-link to="/gallery" class="footer-link" id="gallery" exact>GALLERY</router-link>
+        <router-link to="/projects" class="footer-link" id="project">PROJECT</router-link>
+        <router-link to="/gallery" class="footer-link" id="gallery">GALLERY</router-link>
         <div :class="['footer-logo', { open: clicked }]" @click="clicked = !clicked">Ö</div>
         <transition name="slide">
             <div :class="['nav-menu', { open: clicked }]" v-if="clicked">
@@ -45,12 +45,12 @@
                 </div>
                 <div class="navlink-wrapper">
                     <router-link to="/legal" class="legal-link">Legal</router-link>
-                    <router-link to="/" class="home-link" exact>Home</router-link>
+                    <router-link to="/" class="home-link">Home</router-link>
                 </div>
             </div>
         </transition>
-        <router-link to="/about" class="footer-link" id="about" exact>ABOUT</router-link>
-        <router-link to="/contact" class="footer-link" id="contact" exact>CONTACT</router-link>
+        <router-link to="/about" class="footer-link" id="about">ABOUT</router-link>
+        <router-link to="/contact" class="footer-link" id="contact">CONTACT</router-link>
     </footer>
 </template>
 
