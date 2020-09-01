@@ -11,6 +11,30 @@
   }
 }
 
+@media screen and (max-width: 400px) {
+  .get-in-touch {
+    h1 {
+      font-size: 1.7rem;
+    }
+
+    p {
+      font-size: 1.1rem;
+    }
+  }
+}
+
+@media screen and (max-width: 332px) {
+  form {
+    font-size: 1rem;
+
+    textarea {
+      min-width: 0;
+      max-width: none;
+      max-height: none;
+    }
+  }
+}
+
 @media screen and (max-width: 375px) {
   .contact-wrapper {
     margin: 15px 0;

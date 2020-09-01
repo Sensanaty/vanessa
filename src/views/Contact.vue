@@ -2,6 +2,7 @@
     <div class="content-wrapper contact-wrapper">
         <div class="get-in-touch">
             <h1>Had a project in mind you wanted to talk about?</h1>
+            <p>Book a <a href="">consultation</a> with me, or fill out the form below!</p>
             <ContactForm />
         </div>
     </div>
@@ -29,7 +30,7 @@
 
 <style lang="scss">
     .contact-wrapper {
-        margin: auto 25px;
+        margin: auto_    25px;
     }
 
     .get-in-touch {
