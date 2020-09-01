@@ -28,17 +28,22 @@
         name: "ProjectPage",
         metaInfo() {
             return {
-                title: "Project | " + this.project.title
+                title: "Project | " + this.title
             };
         },
         data() {
             return {
-                project: null
+                project: null,
+                title: null
             };
+        },
+        created() {
+            this.$route.meta.title = "Project | " + this.title;
         },
         methods: {
             setProjectPage(projectDetails) {
                 this.project = projectDetails;
+                this.title = projectDetails.title;
             }
         },
         beforeRouteEnter(to, from, next) {
