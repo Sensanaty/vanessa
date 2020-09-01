@@ -85,7 +85,6 @@
             changeHeader(name) {
                 const footer = document.querySelector(".mobile");
                 const pagePath = this.$route.path;
-                console.log("Path:", pagePath);
 
                 if (name === "Projects" || pagePath.includes("projects/")) {
                     footer.classList.remove("gallery", "about", "contact", "misc");

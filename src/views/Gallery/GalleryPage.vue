@@ -107,7 +107,6 @@
                 this.title = currentGallery.title;
                 this.altTexts = currentGallery.altText;
                 this.checkForProject();
-                console.log(currentGallery);
             },
             checkForProject() {
                 if (ProjectList.find(project => project.id === this.$route.params.id)) {

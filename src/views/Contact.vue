@@ -30,7 +30,7 @@
 
 <style lang="scss">
     .contact-wrapper {
-        margin: auto_    25px;
+        margin: auto 25px;
     }
 
     .get-in-touch {
