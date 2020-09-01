@@ -2,52 +2,6 @@
   .get-in-touch {
     position: static;
   }
-
-  .recommendations {
-    flex-flow: row wrap;
-    margin-bottom: 25px;
-
-    h1 {
-      margin: 0 auto;
-    }
-
-    .recommendation {
-      width: 100%;
-      margin: 20px;
-    }
-  }
-}
-
-@media screen and (max-width: 1115px) {
-  .recommendations {
-    h1 {
-      font-size: 2rem;
-    }
-  }
-}
-
-@media screen and (max-width: 995px) {
-  .recommendations {
-    h1 {
-      font-size: 1.6rem;
-    }
-  }
-}
-
-@media screen and (max-width: 795px) {
-  .recommendations {
-    h1 {
-      font-size: 1.4rem;
-    }
-  }
-}
-
-@media screen and (max-width: 700px) {
-  .recommendations {
-    h1 {
-      text-align: center;
-    }
-  }
 }
 
 @media screen and (max-width: 500px) {
@@ -60,9 +14,5 @@
 @media screen and (max-width: 375px) {
   .contact-wrapper {
     margin: 15px 0;
-  }
-
-  .recommendations .recommendation {
-    margin: 20px 0;
   }
 }

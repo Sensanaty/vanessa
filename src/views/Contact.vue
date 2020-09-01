@@ -1,9 +1,5 @@
 <template>
     <div class="content-wrapper contact-wrapper">
-        <div class="recommendations">
-
-        </div>
-
         <div class="get-in-touch">
             <h1>Had a project in mind you wanted to talk about?</h1>
             <ContactForm />
@@ -33,17 +29,13 @@
 
 <style lang="scss">
     .contact-wrapper {
-        margin: 15px 25px;
+        margin: auto 25px;
     }
 
     .get-in-touch {
         display: flex;
         flex-flow: column nowrap;
         box-sizing: content-box;
-        position: fixed;
-        right: 50px;
-        top: 17%;
-        margin: auto;
         text-align: center;
         user-select: none;
 
