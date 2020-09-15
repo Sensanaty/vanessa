@@ -2,7 +2,7 @@
     <div class="content-wrapper contact-wrapper">
         <div class="get-in-touch">
             <h1>Had a project in mind you wanted to talk about?</h1>
-            <p>Book a <a href="">consultation</a> with me, or fill out the form below!</p>
+            <p>Book a <a href="https://vanessasoelter.youcanbook.me/" target="_blank" rel="noopener">consultation</a> with me, or fill out the form below!</p>
             <ContactForm />
         </div>
     </div>
